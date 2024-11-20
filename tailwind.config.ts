@@ -20,7 +20,7 @@ const config: Config = {
         "primary-200": "#fab362",
         "primary-300": "#f9a94c",
         "primary-400": "#f99e35",
-        "primary-500": "#f8931f",
+        "primary-500": "#B3DA07",
         "primary-600": "#df841c",
         "primary-700": "#c67619",
         "primary-800": "#ae6716",

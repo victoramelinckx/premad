@@ -44,7 +44,7 @@ const Footer = () => {
           <div className="mb-12 md:mb-0 md:max-w-sm">
             <a href="/" className="inline-block mb-6">
               <img
-                src="/opencode/openLogoTexto.svg"
+                src="/premad_logo.png"
                 alt="Logo Opencode"
                 className="h-20 w-auto"
               />

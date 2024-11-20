@@ -21,7 +21,7 @@ export const About = () => {
                 knowledge and skills that they have acquired over the years,
                 making them experts in their field.
               </p>
-              <button className="mt-10 text-lg flex items-center gap-1 rounded-full bg-[#ffb400] px-5 py-3 text-black font-semibold w-fit hover:opacity-70">
+              <button className="mt-10 text-lg flex items-center gap-1 rounded-full bg-primary-500 px-5 py-3 text-white font-semibold w-fit hover:opacity-70">
                 Our services
               </button>
             </div>

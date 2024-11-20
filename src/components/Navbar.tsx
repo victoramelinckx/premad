@@ -1,6 +1,6 @@
 "use client";
 
-import { animateScroll as scroll } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { Button } from "./Button";
 import { NavbarLink } from "./NavbarLink";
 import {
@@ -10,16 +10,12 @@ import {
   useEffect,
   useState,
 } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { FaPhone } from "react-icons/fa6";
-import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
-import { productos } from "@/data/productos";
+import X from "./X";
+import Bars from "./Bars";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
-  const pathname = usePathname();
 
   const changeNav = () => {
     if (window.scrollY >= 96) {
@@ -33,12 +29,6 @@ export const Navbar = () => {
     scroll.scrollToTop();
   };
 
-  const handleLogoClick = () => {
-    if (pathname === "/") {
-      scroll.scrollToTop();
-    }
-  };
-
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
 
@@ -47,18 +37,17 @@ export const Navbar = () => {
 
   return (
     <>
-      {/* <NavbarTop>
+      <NavbarTop>
         <NavbarContent
           isScrollNav={false}
           toggleHome={toggleHome}
           isMenuOpen={isMenuOpen}
           setIsMenuOpen={setIsMenuOpen}
         />
-      </NavbarTop> */}
-      <NavbarScroll className={`${scrollNav ? "top-0" : "top-0"}`}>
+      </NavbarTop>
+      <NavbarScroll className={`${scrollNav ? "top-0" : "-top-[4.5rem]"}`}>
         <NavbarContent
           isScrollNav={true}
-          handleLogoClick={handleLogoClick}
           toggleHome={toggleHome}
           isMenuOpen={isMenuOpen}
           setIsMenuOpen={setIsMenuOpen}
@@ -75,7 +64,7 @@ export const Navbar = () => {
 
 const NavbarTop = ({ children }: { children: ReactNode }) => {
   return (
-    <nav className="z-50 flex justify-center items-center transition-all duration-700 w-full h-28 -mb-28 bg-transparent text-gray-800">
+    <nav className="z-50 flex justify-center items-center transition-all duration-700 w-full h-28 -mb-28 bg-transparent text-white">
       {children}
     </nav>
   );
@@ -90,24 +79,20 @@ const NavbarScroll = ({
 }) => {
   return (
     <nav
-      className={`fixed z-50 flex justify-center items-center transition-all duration-700 w-full text-gray-800 lg:h-[4.5rem] top-0 lg:top-3 ${className}`}
+      className={`sticky z-50 flex justify-center items-center transition-all duration-700 w-full bg-black text-white shadow-md h-[4.5rem] -mt-[4.5rem] ${className}`}
     >
-      <div className="flex w-full sm:max-lg:py-2 lg:w-[95%] lg:max-w-[73rem] xl:max-w-[74rem] bg-[#ffffffd0] backdrop-blur-[12px] lg:rounded-full">
-        {children}
-      </div>
+      {children}
     </nav>
   );
 };
 
 const NavbarContent = ({
   isScrollNav,
-  handleLogoClick,
   toggleHome,
   isMenuOpen,
   setIsMenuOpen,
 }: {
   isScrollNav: boolean;
-  handleLogoClick: () => void;
   toggleHome: () => void;
   isMenuOpen: boolean;
   setIsMenuOpen: Dispatch<SetStateAction<boolean>>;
@@ -115,85 +100,100 @@ const NavbarContent = ({
   return (
     <div
       className={`flex justify-between ${
-        isScrollNav ? "h-[4.5rem]" : "h-28"
-      } w-full mx-4`}
+        isScrollNav ? "h-[4.5rem]" : "h-24"
+      } w-full max-w-6xl mx-6 md:mx-14`}
     >
-      <div className="flex gap-12">
-        <Link
-          href="/"
+      <div className="flex gap-4">
+        <button
           className="self-center flex items-center w-fit"
-          onClick={handleLogoClick}
+          onClick={toggleHome}
         >
           <img
-            src="/opencode/openLogoTexto.svg"
+            src="/premad_logo.png"
             className={`${
-              isScrollNav ? "w-36" : "w-48 max-md:w-36"
+              isScrollNav ? "w-24" : "w-48 max-md:w-36"
             } transition-all duration-700`}
-            alt="OpenCode"
+            alt="Plumbing Solutions in Miami. Jdenx Solutions."
           />
-        </Link>
+        </button>
         <ul
-          className={`flex flex-col gap-12 lg:flex-row max-lg:hidden lg:items-center lg:static transition-all duration-700 font-medium text-center text-lg`}
+          className={`flex flex-col lg:flex-row max-lg:hidden lg:items-center absolute lg:static opacity-[1] transition-all duration-700 font-medium text-center lg:-mr-5
+          ${isScrollNav && "text-sm"}`}
         >
           <NavbarLink
-            key="productos"
-            title="Productos"
-            sublinks={productos}
-            onClick={() => setIsMenuOpen(false)}
-          />
-          <NavbarLink
-            key="contacto"
-            title="Contacto"
-            href="/contacto"
-            onClick={() => setIsMenuOpen(false)}
-          />
-          <NavbarLink
             key="acerca"
-            title="Acerca"
-            href="/acerca"
+            title="About"
+            to="acerca"
+            smooth
+            spy
+            offset={-72}
+            activeClass="lg:border-b-[3px] lg:border-b-primary-500"
+            onClick={() => setIsMenuOpen(false)}
+          />
+          <NavbarLink
+            key="servicios"
+            title="Services"
+            to="servicios"
+            smooth
+            spy
+            offset={-72}
+            activeClass="lg:border-b-[3px] lg:border-b-primary-500"
+            onClick={() => setIsMenuOpen(false)}
+          />
+          <NavbarLink
+            key="antes/despues"
+            title="Jobs"
+            to="antes/despues"
+            smooth
+            spy
+            offset={-72}
+            activeClass="lg:border-b-[3px] lg:border-b-primary-500"
             onClick={() => setIsMenuOpen(false)}
           />
         </ul>
       </div>
       <div
-        className={`flex items-center justify-center h-full lg:hidden max-lg:absolute max-lg:top-0 max-lg:right-0 -translate-x-1/2 transition-all duration-700 `}
+        className={`z-[60] lg:hidden max-lg:absolute max-lg:top-0 max-lg:right-0 -translate-x-1/2 transition-all duration-700 ${
+          isScrollNav ? "translate-y-[25%]" : "translate-y-[50%]"
+        } `}
       >
         <button
-          className="bg-primary-500 transition-all duration-700 rounded-lg aspect-square w-12 flex items-center justify-center"
+          className="text-primary-500 transition-all duration-700"
           onClick={() => {
             setIsMenuOpen(!isMenuOpen);
           }}
         >
-          {isMenuOpen ? (
-            <Cross1Icon className="text-white w-6 h-full" />
-          ) : (
-            <HamburgerMenuIcon className="text-white w-6 h-full" />
-          )}
+          {isMenuOpen ? <X /> : <Bars />}
         </button>
       </div>
       <div
         className={`${
-          isScrollNav ? "h-[4.5rem]" : "h-28"
+          isScrollNav ? "h-[4.5rem]" : "h-24"
         } flex items-center gap-6`}
       >
         <a
-          className="flex gap-1 items-center max-xl:hidden font-semibold text-gray-800 text-lg transition-all ease-in-out duration-300 hover:-translate-y-1"
+          className="flex gap-1 items-center max-xl:hidden font-semibold text-white text-lg transition-all ease-in-out duration-300 hover:-translate-y-1"
           href="https://api.whatsapp.com/send/?phone=7866431006&text=Hi%20I%20would%20like%20to%20get%20a%20quote%F0%9F%98%83"
         >
-          <FaPhone className="w-5 h-5 mr-1 text-primary-500" />
-          +56 9 9591 8598
+          <img src="icons/phonewhite.svg" className="w-5 mr-1" />
+          786-6431006
         </a>
 
-        <Link key="contacto" className="max-lg:hidden" href="">
-          <Button
-            title="¡Contáctanos!"
-            className="bg-primary-500 text-white rounded-full"
-          />
+        <Link
+          key="contacto"
+          to="contacto"
+          smooth
+          spy
+          offset={-72}
+          className="max-lg:hidden"
+        >
+          <Button title="Contact us!" />
         </Link>
       </div>
     </div>
   );
 };
+
 const MobileNavbarContent = ({
   scrollNav,
   isMenuOpen,
@@ -205,85 +205,45 @@ const MobileNavbarContent = ({
 }) => {
   return (
     <div
-      className={`z-50 top-0 flex fixed min-h-screen h-screen w-screen lg:hidden text-sm ${
+      className={`z-50 flex fixed top-24 left w-3/4 lg:hidden text-sm ${
         isMenuOpen
-          ? "left-0 transition-all duration-700 bg-white"
+          ? " transition-all duration-700 bg-white rounded-2xl left-1/2 -translate-x-1/2 shadow-2xl"
           : "-left-full duration-500"
       }`}
     >
       <ul
-        className={`flex flex-col w-full self-center
+        className={`flex flex-col w-full self-center my-8
     ${!scrollNav ? "transition-all duration-700" : "duration-500"}
         `}
       >
-        <div className="h-[1px] w-3/4 self-center bg-secondary-50 mt-4" />
+        <NavbarLink
+          key="servicios"
+          title="Servicios"
+          to="servicios"
+          smooth
+          className="h-14"
+          onClick={() => setIsMenuOpen(false)}
+        />
 
-        <div className="h-[1px] w-3/4 self-center bg-secondary-50" />
         <NavbarLink
-          key="productos"
-          title="Productos"
-          sublinks={productos}
-          onClick={() => setIsMenuOpen(false)}
-        />
-        <div className="h-[1px] w-3/4 self-center bg-secondary-50" />
-        <NavbarLink
-          key="contacto"
-          title="Contacto"
+          key="antes/despues"
+          title="Resultados"
+          to="antes/despues"
+          smooth
+          offset={-72}
           className="h-14"
-          href="/contacto"
           onClick={() => setIsMenuOpen(false)}
         />
-        <div className="h-[1px] w-3/4 self-center bg-secondary-50" />
+
         <NavbarLink
-          key="acerca"
-          title="Acerca"
+          key="testimonios"
+          title="Testimonios"
+          to="testimonios"
+          smooth
           className="h-14"
-          href="/acerca"
           onClick={() => setIsMenuOpen(false)}
         />
-        <div className="h-[1px] w-3/4 self-center bg-secondary-50" />
-        <Link
-          className="bg-primary-500 text-white w-3/4 p-4 self-center mt-6 font-semibold rounded-full text-center cursor-pointer hover:opacity-70 active:opacity-70"
-          href=""
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Contáctanos
-        </Link>
-        <div
-          className={`mt-10 w-full flex flex-col items-center gap-10 justify-center`}
-        >
-          <button
-            onClick={() => {
-              setIsMenuOpen(false);
-            }}
-            className="transition transitihover:transform hover:-translate-y-1"
-          >
-            <img src="/opencode/openLogoTexto.svg" className="w-56 z-50" />
-          </button>
-          {/* <a
-            // href="https://www.instagram.com/drfranciscogalindom"
-            className="transition transitihover:transform hover:-translate-y-1"
-          >
-            <FaInstagram className="w-10 h-10 text-[#1C1C1C99] transition-all ease-out hover:text-primary-500" />
-          </a> */}
-        </div>
       </ul>
-      <div
-        className={`absolute top-0 right-0 -translate-x-1/2 flex justify-center items-center transition-all duration-700 h-[4.5rem]`}
-      >
-        <button
-          className="transition-all duration-700 rounded-lg aspect-square w-12 flex items-center justify-center"
-          onClick={() => {
-            setIsMenuOpen(!isMenuOpen);
-          }}
-        >
-          {isMenuOpen ? (
-            <Cross1Icon className="text-primary-500 w-6 h-full" />
-          ) : (
-            <HamburgerMenuIcon className="text-primary-500 w-6 h-full" />
-          )}
-        </button>
-      </div>
     </div>
   );
 };

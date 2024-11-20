@@ -18,8 +18,9 @@ export const Button = ({
   return (
     <button
       className={cn(
-        `${borderColor ? "border-2 py-3" : "py-[14px]"
-        } px-4 rounded-lg text-black bg-secondary-200 font-semibold h-fit hover:opacity-70 active:opacity-70`,
+        `${
+          borderColor ? "border-2 py-3" : "py-[14px]"
+        } px-4 rounded-lg text-white bg-primary-500 font-semibold h-fit hover:opacity-70 active:opacity-70`,
         borderColor,
         className
       )}

@@ -25,11 +25,12 @@ export default function Home() {
       {/* <Beneficios /> */}
       <About />
       <Video videoId="1U2AL8abSgg" />
+      <Clientes />
       <Proyectos />
       {/* <Precios />
       <Testimonios /> */}
-      <Clientes />
-      <Faq />
+
+      {/* <Faq /> */}
       <Cta />
       <Contacto />
 
