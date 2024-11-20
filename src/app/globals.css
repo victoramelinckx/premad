@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.split-letter {
+  position: relative;
+  display: inline-block;
+}
+
+.split-letter::before {
+  content: 'o';
+  position: absolute;
+  left: 0;
+  width: 30.5px;
+  overflow: hidden;
+  color: black;
+}
