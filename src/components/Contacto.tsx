@@ -12,7 +12,7 @@ import { RiYoutubeFill } from "react-icons/ri";
 
 const notifySuccess = () =>
   toast.success(
-    "Se han enviado exitosamente tus datos\nTe contactaremos a la brevedad.😁"
+    "Tus datos han sido enviados exitosamente.\nTe contactaremos a la brevedad. 😁"
   );
 const notifyError = () =>
   toast.error(
@@ -127,10 +127,11 @@ export const Contacto = () => {
             </form>
           </div>
           <div className="flex flex-col w-full lg:w-1/2 text-black">
-            <h3 className=" text-4xl font-bold">
-              Agenda una reunión sin costo
-            </h3>
-            <div className="flex flex-row space-x-2 mt-8">
+            <h3 className="text-4xl font-bold">Agenda una reunión sin costo</h3>
+            <p className="text-center text-gray-700 font-medium max-w-lg mt-2">
+              Nuestro equipo se pondrá en contacto contigo a la brevedad
+            </p>
+            {/* <div className="flex flex-row space-x-2 mt-8">
               <div className=" p-4 border border-black rounded-full">
                 <TfiFacebook className="w-4 h-auto text-primary-500" />
               </div>
@@ -143,7 +144,7 @@ export const Contacto = () => {
               <div className=" p-4 border border-black rounded-full">
                 <RiYoutubeFill className="w-5 h-auto text-primary-500" />
               </div>
-            </div>
+            </div> */}
             <div className="grid grid-cols-2 mt-6 space-y-4 font-medium">
               <div className="flex flex-row space-x-1 items-center">
                 <div>
