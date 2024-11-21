@@ -1,9 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { IoPlayCircle } from "react-icons/io5";
 import { Element } from "react-scroll";
 import YouTube from "react-youtube";
+import imagenVideo from "../../public/imagenes/video.png";
 
 interface VideoProps {
   videoId: string;
@@ -30,12 +32,15 @@ export const Video = ({ videoId = "1U2AL8abSgg" }: VideoProps) => {
   return (
     <Element name="video" className="w-full flex justify-center">
       <div className="my-20 w-full max-w-6xl px-4">
+        <h3 className="lg:text-[48px] md:text-[32px] text-[28px] leading-tight font-bold mb-10">
+          Quienes Somos...
+        </h3>
         <div className="relative aspect-video w-full rounded-2xl overflow-hidden bg-black/5">
           {!isPlaying ? (
             <>
               <div className="absolute inset-0">
-                <img
-                  src={thumbnailUrl}
+                <Image
+                  src={imagenVideo}
                   alt="Video thumbnail"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -46,9 +51,7 @@ export const Video = ({ videoId = "1U2AL8abSgg" }: VideoProps) => {
                 className="absolute inset-0 flex items-center justify-center bg-black/30 transition-all hover:bg-black/40 group"
                 aria-label="Play video"
               >
-                <div className="rounded-full bg-white/90 p-4 backdrop-blur-sm transition-transform group-hover:scale-110">
-                  <IoPlayCircle className="h-12 w-12 text-black" />
-                </div>
+                <IoPlayCircle className="h-20 w-20 text-white" />
               </button>
             </>
           ) : (
