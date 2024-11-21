@@ -9,6 +9,9 @@ import { TfiFacebook } from "react-icons/tfi";
 import { GrInstagram } from "react-icons/gr";
 import { ImWhatsapp } from "react-icons/im";
 import { RiYoutubeFill } from "react-icons/ri";
+import { FaLocationDot } from "react-icons/fa6";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 
 const notifySuccess = () =>
   toast.success(
@@ -128,7 +131,7 @@ export const Contacto = () => {
           </div>
           <div className="flex flex-col w-full lg:w-1/2 text-black">
             <h3 className="text-4xl font-bold">Agenda una reunión sin costo</h3>
-            <p className="text-center text-gray-700 font-medium max-w-lg mt-2">
+            <p className=" text-gray-700 font-medium max-w-lg mt-6">
               Nuestro equipo se pondrá en contacto contigo a la brevedad
             </p>
             {/* <div className="flex flex-row space-x-2 mt-8">
@@ -145,30 +148,24 @@ export const Contacto = () => {
                 <RiYoutubeFill className="w-5 h-auto text-primary-500" />
               </div>
             </div> */}
-            <div className="grid grid-cols-2 mt-6 space-y-4 font-medium">
-              <div className="flex flex-row space-x-1 items-center">
+            <div className="grid grid-cols-2 mt-10 gap-6 font-medium text-gray-700">
+              <div className="flex flex-row space-x-1">
                 <div>
-                  <TfiFacebook className="w-6 h-auto text-primary-500" />
+                  <FaLocationDot className="w-6 h-auto text-primary-500" />
                 </div>
                 <p>Los Jardines 123, Las Condes, Santiago</p>
               </div>
-              <div className="flex flex-row space-x-1  items-center">
+              <div className="flex flex-row space-x-1">
                 <div>
-                  <TfiFacebook className="w-6 h-auto text-primary-500" />
-                </div>{" "}
-                <p>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
+                  <BsFillTelephoneFill className="w-6 h-auto text-primary-500" />
+                </div>
+                <p>+56 789 456 1914</p>
               </div>
-              <div className="flex flex-row space-x-1 items-center">
+              <div className="flex flex-row space-x-1">
                 <div>
-                  <TfiFacebook className="w-6 h-auto text-primary-500" />
-                </div>{" "}
-                <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
-              </div>
-              <div className="flex flex-row space-x-1 items-center">
-                <div>
-                  <TfiFacebook className="w-6 h-auto text-primary-500" />
-                </div>{" "}
-                <p>(225) 555-0118</p>
+                  <MdEmail className="w-6 h-auto text-primary-500" />
+                </div>
+                <p>premad@gmail.com</p>
               </div>
             </div>
           </div>
