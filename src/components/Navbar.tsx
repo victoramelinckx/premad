@@ -111,7 +111,7 @@ const NavbarContent = ({
           <img
             src="/premad_logo.png"
             className={`${
-              isScrollNav ? "w-24" : "w-48 max-md:w-36"
+              isScrollNav ? "w-24" : "w-36 max-md:w-36"
             } transition-all duration-700`}
             alt="Plumbing Solutions in Miami. Jdenx Solutions."
           />
@@ -122,7 +122,7 @@ const NavbarContent = ({
         >
           <NavbarLink
             key="acerca"
-            title="About"
+            title="Acerca"
             to="acerca"
             smooth
             spy
@@ -132,7 +132,7 @@ const NavbarContent = ({
           />
           <NavbarLink
             key="servicios"
-            title="Services"
+            title="Areas"
             to="servicios"
             smooth
             spy
@@ -142,7 +142,7 @@ const NavbarContent = ({
           />
           <NavbarLink
             key="antes/despues"
-            title="Jobs"
+            title="Trabajos"
             to="antes/despues"
             smooth
             spy
@@ -187,7 +187,7 @@ const NavbarContent = ({
           offset={-72}
           className="max-lg:hidden"
         >
-          <Button title="Contact us!" />
+          <Button title="Contáctenos" />
         </Link>
       </div>
     </div>

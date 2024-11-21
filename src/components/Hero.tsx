@@ -23,35 +23,37 @@ export const Hero = () => {
 
       {/* Content Container - Note the z-10 to place it above the background */}
       <div className="relative z-10 flex max-lg:flex-col lg:py-[150px] w-full lg:w-11/12 max-w-6xl lg:pb-6 gap-14 lg:gap-6 lg:justify-between">
-        <div className="flex flex-col justify-center text-white md:max-lg:items-center gap-3 sm:gap-6 lg:gap-4 lg:min-w-2/3 md:max-lg:text-center max-lg:px-6">
-          <h1 className="leading-tight tracking-[.01em] font-dmsans font-bold text-[44px] md:text-5xl lg:text-6xl xl:text-7xl">
-            Construction <br /> solutions for everyone
+        <div className="flex flex-col justify-center text-white md:max-lg:items-center gap-3 sm:gap-6 lg:gap-4 max-w-4xl md:max-lg:text-center max-lg:px-6 mr-10">
+          <h1 className="leading-tight tracking-[.01em] font-dmsans font-bold text-[44px] md:text-5xl lg:text-6xl ">
+            Innovación y experiencia
+            <br />
+            en construcción industrial.
           </h1>
-          <p className="md:leading-loose tracking-[.03em] max-sm:font-medium font-[450] text-lg xl:text-xl text-white sm:max-lg:w-4/5">
-            We provide the best architectural design, contruction, and building
-            maintance services for you.
+          <p className=" md:leading-normal tracking-[.03em] max-sm:font-medium font-[450] text-base max-w-lg  text-white sm:max-lg:w-4/5">
+            Más de 20 años transformando la construcción modular con soluciones
+            industrializadas de alto rendimiento para proyectos a gran escala.
           </p>
           <div className="flex flex-row space-x-2 mt-4">
             <button className="mt-3 text-lg flex items-center gap-1 rounded-full bg-primary-500 px-5 py-3 text-white font-semibold w-fit hover:opacity-70">
-              Our services
+              Nuestros servicios
             </button>
             <button className="mt-3 text-lg flex items-center gap-1 rounded-full bg-white/30 blur-xs border-solid border-2 px-5 py-3 text-white border-white font-semibold w-fit hover:opacity-70">
-              Get in touch
+              Contáctanos
             </button>
           </div>
         </div>
-        <div className="flex flex-col text-white items-center justify-center space-y-4 w-1/3 py-24">
+        <div className="flex flex-col text-white items-start justify-center  space-y-4 py-24">
           <div className="flex flex-col ">
-            <p className="text-[78px] font-medium">690+</p>
-            <span className=""> Projects completed</span>
+            <p className="text-[78px] font-medium leading-none">200+</p>
+            <span className=""> Proyectos completados</span>
           </div>
           <div className="flex flex-col">
-            <p className="text-[78px] font-medium">500+</p>
-            <p> Happy clients</p>
+            <p className="text-[78px] font-medium leading-none">500+</p>
+            <p> Clientes felices</p>
           </div>
           <div className="flex flex-col ">
-            <p className="text-[78px] font-medium">1200</p>
-            <p> Worker employed</p>
+            <p className="text-[78px] font-medium leading-none">1200</p>
+            <p> Profesionales especializados</p>
           </div>
         </div>
       </div>
