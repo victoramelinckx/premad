@@ -50,8 +50,7 @@ const Footer = () => {
               />
             </a>
             <p className="text-[#1C1C1C99] font-semibold mb-8">
-              Optimiza la gestión de tu empresa con nuestras soluciones de
-              software especializadas.
+              Optimiza la gestión de tu empresa con nuestras soluciones .
             </p>
             {/* <div className="space-y-4">
               <h3 className="text-xl font-semibold">Join our mailing list</h3>
@@ -93,8 +92,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200">
           <p className="text-[#1c1c1c] font-semibold text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Opencode. Todos los derechos
-            reservados.
+            © {new Date().getFullYear()} Premad. Todos los derechos reservados.
           </p>
           <div className="flex space-x-6">
             <a href="https://facebook.com">

@@ -27,7 +27,7 @@ export const Services = () => {
               <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
               {/* Overlay */}
               <Image
-                src="/background.png"
+                src="/imagenes/industria.png"
                 alt="Construction background"
                 fill
                 style={{ objectFit: "cover" }}

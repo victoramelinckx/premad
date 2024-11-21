@@ -65,7 +65,7 @@ export const Contacto = () => {
 
   return (
     <Element name="contacto" className="w-full">
-      <section className=" w-full flex flex-col justify-center items-center z-20 py-20">
+      <section className=" w-full flex flex-col justify-center items-center z-20 py-10">
         <div className="flex flex-row gap-12 px-8 rounded-lg w-full max-w-6xl ">
           <div className="flex flex-col justify-center w-full lg:w-1/2 gap-4 py-14 px-10 bg-primary-500/10">
             <form

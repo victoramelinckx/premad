@@ -24,8 +24,9 @@ export default function Home() {
       <Services />
       {/* <Beneficios /> */}
       <About />
-      <Video videoId="1U2AL8abSgg" />
       <Clientes />
+      <Video videoId="1U2AL8abSgg" />
+
       <Proyectos />
       {/* <Precios />
       <Testimonios /> */}

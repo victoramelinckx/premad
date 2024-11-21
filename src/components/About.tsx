@@ -1,6 +1,6 @@
 "use client";
 
-import Acercade from "../../public/acerca.png";
+import Acercade from "../../public/imagenes/premad_acerca.png";
 import Image from "next/image";
 import { Element } from "react-scroll";
 
@@ -13,16 +13,21 @@ export const About = () => {
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
             <div>
               <h3 className="lg:text-[48px] md:text-[32px] text-[28px] leading-tight font-bold">
-                Why choose us?
+                ¿Por que elegirnos?
               </h3>
               <p className="pt-5 text-[#555555] leading-normal">
-                We have a team of experienced professionals who have been in the
-                industry for over 25 years. Our contractors have a wealth of
-                knowledge and skills that they have acquired over the years,
-                making them experts in their field.
+                Somos una empresa con más de 20 años de experiencia en
+                construcción industrializada y modular.
+                <br />
+                <br />
+                Nuestro principal objetivo es desarrollar una estrategia
+                conjunta con nuestros clientes para el desarrollo de
+                los distintos proyectos, apoyados con profesionales de gran
+                trayectoria en las áreas de ingeniería, arquitectura,
+                consultoría, construcción y montaje.
               </p>
               <button className="mt-10 text-lg flex items-center gap-1 rounded-full bg-primary-500 px-5 py-3 text-white font-semibold w-fit hover:opacity-70">
-                Our services
+                Trabajos
               </button>
             </div>
           </div>
@@ -32,7 +37,7 @@ export const About = () => {
             <Image
               src={Acercade}
               alt="About us image"
-              className="w-full rounded-2xl"
+              className="w-full rounded-2xl shadow"
               priority
               placeholder="blur"
             />
