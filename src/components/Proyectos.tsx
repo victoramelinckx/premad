@@ -86,32 +86,22 @@ export const Proyectos = () => {
 const data: CarouselDataType[] = [
   {
     Image: "/proyectos.png",
-    nombre: "Skyrapper Concepcion",
-    tratamiento: "Faucet installation.",
+    nombre: "Centro Logístico Industrial",
+    tratamiento: "25,000 m² - Lampa, Santiago",
   },
   {
     Image: "/proyectos.png",
-    nombre: "Skyrapper Concepcion",
-    tratamiento: "Toilet installation.",
+    nombre: "Complejo Habitacional Modular",
+    tratamiento: "180 unidades - Concepción",
   },
   {
     Image: "/proyectos.png",
-    nombre: "Skyrapper Concepcion",
-    tratamiento: "Drain cleaning.",
+    nombre: "Planta Industrial Prefabricada",
+    tratamiento: "15,000 m² - Antofagasta",
   },
   {
     Image: "/proyectos.png",
-    nombre: "Skyrapper Concepcion",
-    tratamiento: "Main ball replacement.",
-  },
-  {
-    Image: "/proyectos.png",
-    nombre: "Skyrapper Concepcion",
-    tratamiento: "Water pump installation.",
-  },
-  {
-    Image: "/proyectos.png",
-    nombre: "Skyrapper Concepcion",
-    tratamiento: "Underground pipe assemply.",
+    nombre: "Centro de Distribución",
+    tratamiento: "32,000 m² - Quilicura",
   },
 ];

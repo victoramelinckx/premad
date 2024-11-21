@@ -97,16 +97,16 @@ export const Contacto = () => {
                   ref={treatmentRef}
                   className="py-2 sm:py-3  max-w-96 bg-transparent border-0 border-b border-gray-300 focus:border-b-2 focus:border-primary-500 focus:ring-0 px-0 transition-all text-black"
                 >
-                  {sofwareList.map((treatment) => (
-                    <option key={treatment.name}>{treatment.name}</option>
-                  ))}
+                  <option>Viviendas Industrializadas</option>
+                  <option>Componentes Prefabricados</option>
+                  <option>Construcción Industrial</option>
                 </select>
               </div>
               <div className="flex flex-col gap-1">
                 <input
                   id="email"
                   ref={emailRef}
-                  placeholder="contacto@email.com"
+                  placeholder="correo@empresa.com"
                   className="py-2 sm:py-3  max-w-96 bg-transparent border-0 border-b border-gray-300 focus:border-b-2 focus:border-primary-500 focus:ring-0 px-0 transition-all text-black"
                   type="email"
                 />
@@ -115,7 +115,7 @@ export const Contacto = () => {
                 <textarea
                   id="mensaje"
                   ref={mensajeRef}
-                  placeholder="Cuentanos acerca de tu negocio"
+                  placeholder="Cuéntanos sobre tu proyecto"
                   className="py-2 sm:py-3  max-w-96 bg-transparent border-0 border-b border-gray-300 focus:border-b-2 focus:border-primary-500 focus:ring-0 px-0 transition-all text-black"
                   rows={2}
                 />
@@ -127,7 +127,9 @@ export const Contacto = () => {
             </form>
           </div>
           <div className="flex flex-col w-full lg:w-1/2 text-black">
-            <h3 className=" text-4xl font-bold">Get A Free Appoinment</h3>
+            <h3 className=" text-4xl font-bold">
+              Agenda una reunión sin costo
+            </h3>
             <div className="flex flex-row space-x-2 mt-8">
               <div className=" p-4 border border-black rounded-full">
                 <TfiFacebook className="w-4 h-auto text-primary-500" />
@@ -147,7 +149,7 @@ export const Contacto = () => {
                 <div>
                   <TfiFacebook className="w-6 h-auto text-primary-500" />
                 </div>
-                <p>buildy@example.com</p>
+                <p>Los Jardines 123, Las Condes, Santiago</p>
               </div>
               <div className="flex flex-row space-x-1  items-center">
                 <div>

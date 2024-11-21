@@ -13,21 +13,21 @@ export const About = () => {
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
             <div>
               <h3 className="lg:text-[48px] md:text-[32px] text-[28px] leading-tight font-bold">
-                ¿Por que elegirnos?
+                ¿Por qué elegirnos?
               </h3>
-              <p className="pt-5 text-[#555555] leading-normal">
-                Somos una empresa con más de 20 años de experiencia en
-                construcción industrializada y modular.
+              <p className="pt-5 text-gray-700 leading-normal">
+                Expertos en construcción industrializada y modular con más de 20
+                años de trayectoria.
                 <br />
                 <br />
-                Nuestro principal objetivo es desarrollar una estrategia
-                conjunta con nuestros clientes para el desarrollo de
-                los distintos proyectos, apoyados con profesionales de gran
-                trayectoria en las áreas de ingeniería, arquitectura,
-                consultoría, construcción y montaje.
+                Desarrollamos cada proyecto en estrecha colaboración con
+                nuestros clientes, respaldados por un equipo de élite en
+                ingeniería, arquitectura, consultoría y construcción. Nuestra
+                metodología integrada garantiza resultados excepcionales desde
+                el diseño hasta la ejecución final.
               </p>
               <button className="mt-10 text-lg flex items-center gap-1 rounded-full bg-primary-500 px-5 py-3 text-white font-semibold w-fit hover:opacity-70">
-                Trabajos
+                Nuestros proyectos
               </button>
             </div>
           </div>

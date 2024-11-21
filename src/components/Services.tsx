@@ -15,9 +15,9 @@ export const Services = () => {
           <h2 className=" lg:text-[48px] md:text-[32px] text-[28px] leading-tight font-bold text-center">
             Nuestras areas.
           </h2>
-          <p className="text-center text-[#1C1C1C99] font-medium max-w-md mt-2  ">
-            Ofrecemos una amplia gama de sofware, diseñados para adaptarse
-            perfectamente a tu empresa.
+          <p className="text-center text-gray-700 font-medium max-w-lg mt-2  ">
+            Soluciones integrales en construcción industrial y modular,
+            respaldadas por más de 20 años de experiencia.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 lg:gap-y-8 mt-4">
@@ -39,9 +39,9 @@ export const Services = () => {
               Viviendas Industrilizadas
             </h3>
             <p className="z-10 text-center px-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              quis feugiat erat. Maecenas in tortor vel est porttitor eleifend
-              nec eu urna. Nulla eleifend facilisis urna.
+              Construcción modular de alta eficiencia para proyectos
+              residenciales, optimizando tiempos y recursos sin comprometer la
+              calidad.
             </p>
           </div>
           {/* Segundo */}
@@ -63,9 +63,8 @@ export const Services = () => {
               Componentes Prefabricados
             </h3>
             <p className="z-10 text-center px-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              quis feugiat erat. Maecenas in tortor vel est porttitor eleifend
-              nec eu urna. Nulla eleifend facilisis urna.
+              Fabricación y montaje de elementos constructivos estandarizados
+              que garantizan precisión y rapidez en la ejecución de proyectos.
             </p>
           </div>
           <div className="relative w-full h-[564px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
@@ -86,9 +85,9 @@ export const Services = () => {
               Constructora
             </h3>
             <p className="z-10 text-center px-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              quis feugiat erat. Maecenas in tortor vel est porttitor eleifend
-              nec eu urna. Nulla eleifend facilisis urna.
+              Servicios integrales de construcción industrial con los más altos
+              estándares de calidad y seguridad para proyectos de gran
+              envergadura.
             </p>
           </div>
         </div>

@@ -33,7 +33,7 @@ export const Video = ({ videoId = "1U2AL8abSgg" }: VideoProps) => {
     <Element name="video" className="w-full flex justify-center">
       <div className="my-20 w-full max-w-6xl px-4">
         <h3 className="lg:text-[48px] md:text-[32px] text-[28px] leading-tight font-bold mb-10">
-          Quienes Somos...
+          Conozca nuestra historia.
         </h3>
         <div className="relative aspect-video w-full rounded-2xl overflow-hidden bg-black/5">
           {!isPlaying ? (
