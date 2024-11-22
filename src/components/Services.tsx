@@ -10,18 +10,18 @@ import Image from "next/image";
 export const Services = () => {
   return (
     <section className="bg-[#f3f3f3] flex flex-col w-full justify-center items-center rounded-3xl md:rounded-[4rem]">
-      <div className="flex flex-col w-full lg:w-11/12 max-w-6xl py-20 max-md:px-5 md:max-lg:px-12 gap-6">
+      <div className="flex flex-col w-full lg:w-11/12 max-w-6xl py-10 lg:py-20 max-md:px-5 md:max-lg:px-12 gap-6">
         <div className="flex flex-col items-center text-black">
-          <h2 className=" lg:text-[48px] md:text-[32px] text-[28px] leading-tight font-bold text-center">
+          <h2 className=" lg:text-[48px]  text-[36px] leading-tight font-bold text-start w-full lg:text-center">
             Nuestras areas.
           </h2>
-          <p className="text-center text-gray-700 font-medium max-w-lg mt-2  ">
+          <p className="lg:text-center text-gray-700 font-medium max-w-lg mt-2  ">
             Soluciones integrales en construcción industrial y modular,
             respaldadas por más de 20 años de experiencia.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 lg:gap-y-8 mt-4">
-          <div className="relative w-full h-[564px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 lg:gap-y-8 lg:mt-4">
+          <div className="relative w-full h-[464px] lg:h-[564px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
             {/* Background Image Container */}
             <div className="absolute inset-0 w-full h-full z-0">
               <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
@@ -45,7 +45,7 @@ export const Services = () => {
             </p>
           </div>
           {/* Segundo */}
-          <div className="relative w-full h-[564px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
+          <div className="relative w-full h-[464px] lg:h-[564px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
             {/* Background Image Container */}
             <div className="absolute inset-0 w-full h-full z-0">
               <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
@@ -67,7 +67,7 @@ export const Services = () => {
               que garantizan precisión y rapidez en la ejecución de proyectos.
             </p>
           </div>
-          <div className="relative w-full h-[564px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
+          <div className="relative w-full h-[464px] lg:h-[564px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
             {/* Background Image Container */}
             <div className="absolute inset-0 w-full h-full z-0">
               <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
