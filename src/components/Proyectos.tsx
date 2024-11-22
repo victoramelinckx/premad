@@ -25,7 +25,7 @@ export const Proyectos = () => {
     >
       <section className="flex flex-col pt-10 pb-10 justify-center items-center">
         <div className="flex flex-col w-full mb-8 max-w-6xl px-4">
-          <h3 className="lg:text-[48px] md:text-[32px] text-[28px] leading-tight font-bold">
+          <h3 className="lg:text-[48px] text-[36px] leading-tight font-bold">
             Our Featured Projects
           </h3>
         </div>

@@ -31,11 +31,11 @@ export const Video = ({ videoId = "1U2AL8abSgg" }: VideoProps) => {
 
   return (
     <Element name="video" className="w-full flex justify-center">
-      <div className="my-20 w-full max-w-6xl px-4">
-        <h3 className="lg:text-[48px] md:text-[32px] text-[28px] leading-tight font-bold mb-10">
+      <div className=" my-10 lg:my-20 w-full max-w-6xl px-4">
+        <h3 className="lg:text-[48px] text-[36px] leading-tight font-bold mb-6 lg:mb-10">
           Conozca nuestra historia.
         </h3>
-        <div className="relative aspect-video w-full rounded-2xl overflow-hidden bg-black/5">
+        <div className="relative  aspect-[9/16] md:aspect-video w-full rounded-2xl overflow-hidden bg-black/5">
           {!isPlaying ? (
             <>
               <div className="absolute inset-0">

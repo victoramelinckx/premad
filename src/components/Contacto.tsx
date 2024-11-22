@@ -68,13 +68,13 @@ export const Contacto = () => {
 
   return (
     <Element name="contacto" className="w-full">
-      <section className=" w-full flex flex-col justify-center items-center z-20 py-10">
-        <div className="flex flex-row gap-12 px-8 rounded-lg w-full max-w-6xl ">
-          <div className="flex flex-col justify-center w-full lg:w-1/2 gap-4 py-14 px-10 bg-primary-500/10">
+      <section className=" w-full flex flex-col justify-center items-center z-20 py-10 overflow-hidden">
+        <div className="flex flex-col-reverse md:flex-row-reverse gap-12 px-8 rounded-lg w-full max-w-6xl ">
+          <div className="flex flex-col justify-center w-full lg:w-1/2 gap-4 py-8 lg:py-14 px-6 lg:px-10 bg-primary-500/10 rounded-lg">
             <form
               ref={formRef}
               onSubmit={handleForm}
-              className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs border-0 boder-b border-gray-300"
+              className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs border-0 boder-b border-gray-300"
             >
               <div className="flex flex-col gap-1">
                 <input
@@ -94,7 +94,7 @@ export const Contacto = () => {
                   required
                 />
               </div>
-              <div className="flex flex-col gap-1">
+              {/* <div className="flex flex-col gap-1">
                 <select
                   id="service"
                   ref={treatmentRef}
@@ -104,13 +104,13 @@ export const Contacto = () => {
                   <option>Componentes Prefabricados</option>
                   <option>Construcción Industrial</option>
                 </select>
-              </div>
+              </div> */}
               <div className="flex flex-col gap-1">
                 <input
                   id="email"
                   ref={emailRef}
                   placeholder="correo@empresa.com"
-                  className="py-2 sm:py-3  max-w-96 bg-transparent border-0 border-b border-gray-300 focus:border-b-2 focus:border-primary-500 focus:ring-0 px-0 transition-all text-black"
+                  className="py-2 sm:py-3  w-full  bg-transparent border-0 border-b border-gray-300 focus:border-b-2 focus:border-primary-500 focus:ring-0 px-0 transition-all text-black"
                   type="email"
                 />
               </div>
@@ -120,7 +120,7 @@ export const Contacto = () => {
                   ref={mensajeRef}
                   placeholder="Cuéntanos sobre tu proyecto"
                   className="py-2 sm:py-3  max-w-96 bg-transparent border-0 border-b border-gray-300 focus:border-b-2 focus:border-primary-500 focus:ring-0 px-0 transition-all text-black"
-                  rows={2}
+                  rows={3}
                 />
               </div>
               <Button
@@ -148,7 +148,7 @@ export const Contacto = () => {
                 <RiYoutubeFill className="w-5 h-auto text-primary-500" />
               </div>
             </div> */}
-            <div className="grid grid-cols-2 mt-10 gap-6 font-medium text-gray-700">
+            <div className="grid grid-cols-2 mt-10 gap-6 font-medium max-md:text-[14px] text-gray-700">
               <div className="flex flex-row space-x-1">
                 <div>
                   <FaLocationDot className="w-6 h-auto text-primary-500" />
