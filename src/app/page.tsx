@@ -14,6 +14,7 @@ import { Video } from "@/components/Video";
 import { Proyectos } from "@/components/Proyectos";
 import { Clientes } from "@/components/Clientes";
 import { Contacto } from "@/components/Contacto";
+import { Cta2 } from "@/components/Cta2";
 
 export default function Home() {
   return (
@@ -32,8 +33,8 @@ export default function Home() {
       <Testimonios /> */}
 
       {/* <Faq /> */}
-      <Cta />
-      <Contacto />
+      <Cta2 />
+      {/* <Contacto /> */}
 
       {/* <Testimonials /> */}
       {/* <ContactUs /> */}
