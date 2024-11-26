@@ -21,7 +21,7 @@ export const Services = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 lg:gap-y-8 lg:mt-4">
-          <div className="relative w-full h-[464px] lg:h-[564px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
+          <div className="relative w-full h-[464px] lg:h-[500px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
             {/* Background Image Container */}
             <div className="absolute inset-0 w-full h-full z-0">
               <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
@@ -45,7 +45,7 @@ export const Services = () => {
             </p>
           </div>
           {/* Segundo */}
-          <div className="relative w-full h-[464px] lg:h-[564px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
+          <div className="relative w-full h-[464px] lg:h-[500px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
             {/* Background Image Container */}
             <div className="absolute inset-0 w-full h-full z-0">
               <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
@@ -67,7 +67,8 @@ export const Services = () => {
               que garantizan precisión y rapidez en la ejecución de proyectos.
             </p>
           </div>
-          <div className="relative w-full h-[464px] lg:h-[564px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
+          {/* Tercero */}
+          <div className="relative w-full h-[464px] lg:h-[500px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
             {/* Background Image Container */}
             <div className="absolute inset-0 w-full h-full z-0">
               <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
