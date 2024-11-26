@@ -2,13 +2,15 @@ import LogoCarousel from "./LogoCarousel";
 
 export const Clientes = () => {
   return (
-    <section className="w-full flex justify-center max-w-6xl">
-      <div className="flex p-16 rounded-[30px] shadow bg-primary-500  overflow-hidden w-full">
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 my-10">
-          <p className="text-white text-4xl font-bold max-lg:text-center">
+    <section className="w-full  flex justify-center">
+      <div className="flex max-w-6xl w-full py-16 px-8 md:p-16 rounded-[30px] shadow bg-primary-500 overflow-hidden">
+        <div className="flex flex-col lg:flex-row w-full items-center justify-between gap-8 my-4 lg:my-10">
+          <h2 className="text-white text-3xl lg:text-4xl font-bold text-center lg:text-left lg:max-w-md">
             Más de 200 empresas confían en nosotros
-          </p>
-          <LogoCarousel />
+          </h2>
+          <div className="lg:flex-1">
+            <LogoCarousel />
+          </div>
         </div>
       </div>
     </section>

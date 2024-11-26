@@ -21,18 +21,18 @@ export const Proyectos = () => {
   return (
     <Element
       name="antes/despues"
-      className="w-full overflow-hidden bg-[#0a0d14] pb-8"
+      className="w-full overflow-hidden bg-[#0a0d14] pb-8 "
     >
       <section className="flex flex-col py-10 lg:py-20 justify-center items-center">
         <div className="flex flex-col w-full mb-10 max-w-6xl px-4">
-          <h3 className="lg:text-[48px] text-[36px] leading-tight font-bold text-white">
+          <h3 className="lg:text-[48px] md:text-[36px] text-[32px] leading-tight font-bold text-white">
             Algunos de nuestros proyectos
           </h3>
-          <p className=" font-medium text-white">
+          <p className=" font-medium text-white mt-4">
             A selection of projects around the world featuring Florim surfaces.
           </p>
         </div>
-        <div className="w-full max-w-7xl overflow-visible relative ">
+        <div className="w-full max-md:px-4 max-w-7xl overflow-visible relative ">
           <Carousel
             opts={{
               align: "start",
@@ -49,7 +49,7 @@ export const Proyectos = () => {
               {data.map((item) => (
                 <CarouselItem
                   key={item.tratamiento}
-                  className="pl-4 basis-[450px] min-w-[350px]"
+                  className="pl-4 basis-1  md:basis-[450px] min-w-[350px]"
                 >
                   <div className="relative h-[450px] rounded-2xl overflow-hidden bg-black/5 group">
                     <Image

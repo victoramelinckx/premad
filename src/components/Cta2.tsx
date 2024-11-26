@@ -12,7 +12,7 @@ export const Cta2 = () => {
       name="contacto"
     >
       <motion.div
-        className="flex flex-col md:flex-row p-16 rounded-[30px] shadow bg-primary-500 max-w-6xl w-full"
+        className="flex flex-col md:flex-row p-10 lg:p-16 rounded-[30px] shadow bg-primary-500 max-w-6xl w-full"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.1 }}
@@ -25,7 +25,7 @@ export const Cta2 = () => {
           <p className=" font-medium">
             Danos los detalles y un experto se comunicará contigo.
           </p>
-          <div className="grid grid-cols-2 mt-10 gap-6 font-medium max-md:text-[14px] text-white">
+          <div className="grid grid-cols-2 mt-6 md:mt-10 gap-6 max-sm:mb-8 font-medium max-md:text-[14px] text-white">
             <div className="flex flex-row space-x-1">
               <div>
                 <FaLocationDot className="w-6 h-auto text-white" />
