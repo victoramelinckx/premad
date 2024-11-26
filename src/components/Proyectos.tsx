@@ -21,13 +21,16 @@ export const Proyectos = () => {
   return (
     <Element
       name="antes/despues"
-      className="w-full overflow-hidden bg-[#EDF3FC] pb-8"
+      className="w-full overflow-hidden bg-[#0a0d14] pb-8"
     >
-      <section className="flex flex-col pt-10 pb-10 justify-center items-center">
-        <div className="flex flex-col w-full mb-8 max-w-6xl px-4">
-          <h3 className="lg:text-[48px] text-[36px] leading-tight font-bold">
+      <section className="flex flex-col py-10 lg:py-20 justify-center items-center">
+        <div className="flex flex-col w-full mb-10 max-w-6xl px-4">
+          <h3 className="lg:text-[48px] text-[36px] leading-tight font-bold text-white">
             Our Featured Projects
           </h3>
+          <p className=" font-medium text-white">
+            A selection of projects around the world featuring Florim surfaces.
+          </p>
         </div>
         <div className="w-5/6 sm:w-11/12">
           <Carousel
