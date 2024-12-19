@@ -63,7 +63,7 @@ const Acerca = () => {
               pueden implementar y adaptar el software exactamente según sus
               necesidades específicas.
             </p> */}
-            <div className="w-full  h-full flex flex-col sticky top-24">
+            <div className="w-full max-md:my-4  h-full flex flex-col lg:sticky lg:top-24">
               <p className=" text-primary-500 font-bold text-base my-0 py-0">
                 Montaje Industrial
               </p>
@@ -108,7 +108,7 @@ const Acerca = () => {
                 delay: 5000,
               }),
             ]}
-            className="w-full max-w-6xl cursor-grab active:cursor-grabbing"
+            className="w-11/12 md:w-full max-w-6xl cursor-grab active:cursor-grabbing"
           >
             <CarouselContent>
               {imagenes.map((item) => (
@@ -138,7 +138,7 @@ const Acerca = () => {
           </Carousel>
         </div>
       </section>
-      <section className="flex flex-col md:flex-row max-md:space-y-4 mx-auto max-w-5xl my-32 md:space-x-16 text-black ">
+      <section className="flex flex-col md:flex-row max-md:space-y-4 max-md:mx-8 mx-auto max-w-5xl my-8 md:y-32 md:space-x-16 text-black ">
         <div className=" w-full space-y-2 md:w-1/2">
           <div className="flex flex-row space-x-2 items-center border-b border-black  justify-start pb-2">
             <IoLocationOutline className="text-black w-6 h-auto" />
@@ -157,8 +157,8 @@ const Acerca = () => {
             <p>Cualquier otro dato importante</p>
           </div>
         </div>
-        <div className="flex flex-col space-y-2 w-full md:w-1/2">
-          <p className=" font-semibold text-2xl">
+        <div className="flex flex-col space-y-2 w-full md:w-1/2 max-md:mt-8">
+          <p className=" font-semibold text-2xl max-md:mt-6">
             Titulo Proyecto mas detallado: "Bridge River" - A residential or
             commercial project in New York City, US that is expected to be
             completed in 2021 for a client named Raal Estate.

@@ -32,7 +32,7 @@ export const Services = () => {
                   className="z-0"
                 />
               </div>
-              <h3 className="z-10 font-semibold text-3xl text-center">
+              <h3 className="z-10 font-bold text-3xl text-center">
                 Viviendas Industrilizadas
               </h3>
               <p className="z-10 text-center px-4">
@@ -59,7 +59,7 @@ export const Services = () => {
                   className="z-0"
                 />
               </div>
-              <h3 className="z-10 font-semibold text-3xl text-center">
+              <h3 className="z-10 font-bold text-3xl text-center">
                 Montaje Industrial
               </h3>
               <p className="z-10 text-center px-4">
@@ -85,7 +85,7 @@ export const Services = () => {
                   className="z-0"
                 />
               </div>
-              <h3 className="z-10 font-semibold text-3xl text-center">
+              <h3 className="z-10 font-bold text-3xl text-center">
                 Constructora
               </h3>
               <p className="z-10 text-center px-4">
