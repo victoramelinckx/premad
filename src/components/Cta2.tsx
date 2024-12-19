@@ -30,19 +30,19 @@ export const Cta2 = () => {
               <div>
                 <FaLocationDot className="w-6 h-auto text-white" />
               </div>
-              <p>Los Jardines 123, Las Condes, Santiago</p>
+              <p>Jaime Rapullo 2233, Parque Industrial Talcahuano.</p>
             </div>
             <div className="flex flex-row space-x-1">
               <div>
                 <BsFillTelephoneFill className="w-6 h-auto text-white" />
               </div>
-              <p>+56 789 456 1914</p>
+              <p>+56 413213138</p>
             </div>
             <div className="flex flex-row space-x-1">
               <div>
                 <MdEmail className="w-6 h-auto text-white" />
               </div>
-              <p>premad@gmail.com</p>
+              <p>ventas@premad.cl</p>
             </div>
           </div>
         </div>

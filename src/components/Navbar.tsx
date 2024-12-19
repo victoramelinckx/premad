@@ -13,7 +13,7 @@ import {
 import X from "./X";
 import Bars from "./Bars";
 
-export const Navbar = () => {
+export const Navbar = ({ displayMode }: { displayMode?: string }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
 
@@ -37,15 +37,23 @@ export const Navbar = () => {
 
   return (
     <>
-      <NavbarTop>
-        <NavbarContent
-          isScrollNav={false}
-          toggleHome={toggleHome}
-          isMenuOpen={isMenuOpen}
-          setIsMenuOpen={setIsMenuOpen}
-        />
-      </NavbarTop>
-      <NavbarScroll className={`${scrollNav ? "top-0" : "-top-[4.5rem]"}`}>
+      {/* Renderiza NavbarTop solo si 'displayMode' no está definido */}
+      {!displayMode && (
+        <NavbarTop>
+          <NavbarContent
+            isScrollNav={false}
+            toggleHome={toggleHome}
+            isMenuOpen={isMenuOpen}
+            setIsMenuOpen={setIsMenuOpen}
+          />
+        </NavbarTop>
+      )}
+
+      <NavbarScroll
+        className={`${
+          displayMode ? "top-0" : scrollNav ? "top-0" : "-top-[4.5rem]"
+        }`}
+      >
         <NavbarContent
           isScrollNav={true}
           toggleHome={toggleHome}
@@ -53,6 +61,7 @@ export const Navbar = () => {
           setIsMenuOpen={setIsMenuOpen}
         />
       </NavbarScroll>
+
       <MobileNavbarContent
         scrollNav={scrollNav}
         isMenuOpen={isMenuOpen}

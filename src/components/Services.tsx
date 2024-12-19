@@ -1,11 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { ServicesItem } from "./ServicesItem";
-import { Element } from "react-scroll";
-import { Link } from "react-scroll";
-import { Button } from "./Button";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Services = () => {
   return (
@@ -21,76 +17,84 @@ export const Services = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 lg:gap-y-8 lg:mt-4">
-          <div className="relative w-full h-[464px] lg:h-[500px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
-            {/* Background Image Container */}
-            <div className="absolute inset-0 w-full h-full z-0">
-              <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
-              {/* Overlay */}
-              <Image
-                src="/imagenes/industria.png"
-                alt="Construction background"
-                fill
-                style={{ objectFit: "cover" }}
-                priority
-                className="z-0"
-              />
+          <Link href={"/viviendas_industrializadas"}>
+            <div className="relative w-full h-[464px] lg:h-[500px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
+              {/* Background Image Container */}
+              <div className="absolute inset-0 w-full h-full z-0">
+                <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
+                {/* Overlay */}
+                <Image
+                  src="/imagenes/industria.png"
+                  alt="Construction background"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  priority
+                  className="z-0"
+                />
+              </div>
+              <h3 className="z-10 font-semibold text-3xl text-center">
+                Viviendas Industrilizadas
+              </h3>
+              <p className="z-10 text-center px-4">
+                Construcción modular de alta eficiencia para proyectos
+                residenciales, optimizando tiempos y recursos sin comprometer la
+                calidad.
+              </p>
             </div>
-            <h3 className="z-10 font-semibold text-3xl text-center">
-              Viviendas Industrilizadas
-            </h3>
-            <p className="z-10 text-center px-4">
-              Construcción modular de alta eficiencia para proyectos
-              residenciales, optimizando tiempos y recursos sin comprometer la
-              calidad.
-            </p>
-          </div>
+          </Link>
+
           {/* Segundo */}
-          <div className="relative w-full h-[464px] lg:h-[500px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
-            {/* Background Image Container */}
-            <div className="absolute inset-0 w-full h-full z-0">
-              <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
-              {/* Overlay */}
-              <Image
-                src="/componentes.png"
-                alt="Construction background"
-                fill
-                style={{ objectFit: "cover" }}
-                priority
-                className="z-0"
-              />
+          <Link href={"/montaje_industrial"}>
+            <div className="relative w-full h-[464px] lg:h-[500px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
+              {/* Background Image Container */}
+              <div className="absolute inset-0 w-full h-full z-0">
+                <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
+                {/* Overlay */}
+                <Image
+                  src="/componentes.png"
+                  alt="Construction background"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  priority
+                  className="z-0"
+                />
+              </div>
+              <h3 className="z-10 font-semibold text-3xl text-center">
+                Montaje Industrial
+              </h3>
+              <p className="z-10 text-center px-4">
+                Fabricación y montaje de elementos constructivos estandarizados
+                que garantizan precisión y rapidez en la ejecución de proyectos.
+              </p>
             </div>
-            <h3 className="z-10 font-semibold text-3xl text-center">
-              Componentes Prefabricados
-            </h3>
-            <p className="z-10 text-center px-4">
-              Fabricación y montaje de elementos constructivos estandarizados
-              que garantizan precisión y rapidez en la ejecución de proyectos.
-            </p>
-          </div>
+          </Link>
+
           {/* Tercero */}
-          <div className="relative w-full h-[464px] lg:h-[500px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
-            {/* Background Image Container */}
-            <div className="absolute inset-0 w-full h-full z-0">
-              <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
-              {/* Overlay */}
-              <Image
-                src="/constructora.png"
-                alt="Construction background"
-                fill
-                style={{ objectFit: "cover" }}
-                priority
-                className="z-0"
-              />
+          <Link href={"/constructora"}>
+            <div className="relative w-full h-[464px] lg:h-[500px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
+              {/* Background Image Container */}
+              <div className="absolute inset-0 w-full h-full z-0">
+                <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
+                {/* Overlay */}
+                <Image
+                  src="/constructora.png"
+                  alt="Construction background"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  priority
+                  className="z-0"
+                />
+              </div>
+              <h3 className="z-10 font-semibold text-3xl text-center">
+                Constructora
+              </h3>
+              <p className="z-10 text-center px-4">
+                Servicios integrales de construcción industrial con los más
+                altos estándares de calidad y seguridad para proyectos de gran
+                envergadura.
+              </p>
             </div>
-            <h3 className="z-10 font-semibold text-3xl text-center">
-              Constructora
-            </h3>
-            <p className="z-10 text-center px-4">
-              Servicios integrales de construcción industrial con los más altos
-              estándares de calidad y seguridad para proyectos de gran
-              envergadura.
-            </p>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

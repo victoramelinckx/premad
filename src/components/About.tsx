@@ -13,11 +13,11 @@ export const About = () => {
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
             <div>
               <h3 className="lg:text-[48px]  text-[36px] leading-tight font-bold">
-                ¿Por qué elegirnos?
+                ¿Quiénes somos?
               </h3>
               <p className="pt-5 text-gray-700 leading-normal font-medium">
-                Expertos en construcción industrializada y modular con más de 20
-                años de trayectoria.
+                Expertos en construcción industrializada y modular en Chile con
+                más de 20 años de trayectoria.
                 <br />
                 <br />
                 Desarrollamos cada proyecto en estrecha colaboración con

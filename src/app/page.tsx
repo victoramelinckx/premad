@@ -28,7 +28,7 @@ export default function Home() {
       <Clientes />
       <Video videoId="1U2AL8abSgg" />
 
-      <Proyectos />
+      <Proyectos tipo="home" />
       {/* <Precios />
       <Testimonios /> */}
 

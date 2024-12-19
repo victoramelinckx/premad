@@ -21,7 +21,7 @@ const Acerca = () => {
           </p>
           <div className="flex flex-col md:flex-row md:gap-4 mb-6">
             <h2 className="lg:text-[48px] md:text-[32px] text-[28px] leading-tight font-bold lg:w-1/2">
-              Software que impulsa el éxito empresarial
+              Empresa constructora
             </h2>
 
             <p className="text-sm md:text-base text-gray-900/60 font-semibold mt-2 lg:w-1/2">
@@ -45,38 +45,6 @@ const Acerca = () => {
               necesidades específicas.
             </p>
           </div>
-          <div className="flex flex-col lg:flex-row gap-4 mt-4">
-            <div className="w-full lg:w-1/2">
-              <Image
-                src="/opencode/acercade.jpg"
-                alt="First image description"
-                width={1200}
-                height={800}
-                className="w-full h-full object-cover rounded-[30px]"
-              />
-            </div>
-            <div className="w-full lg:w-1/2">
-              <Image
-                src="/opencode/acercade.jpg"
-                alt="Second image description"
-                width={1200}
-                height={800}
-                className="w-full h-full object-cover rounded-[30px]"
-              />
-            </div>
-          </div>
-          <div className="flex flex-col justify-center items-center gap-8 mt-20">
-            <p className="text-black text-xl font-semibold text-center">
-              Empresas chilenas que confian en OpenCode
-            </p>
-            <div className="mt-8">
-              <LogoCarousel isWhiteGradient={true} />
-            </div>
-
-            <p className="text-sm text-[#1C1C1C99] font-semibold  text-center mt-6">
-              OpenCode ha trabajado con mas 300+ empresas en sus 15 anos.
-            </p>
-          </div>
         </div>
       </section>
       <section className="bg-[#f3f3f3] flex flex-col w-full justify-center items-center rounded-3xl md:rounded-[4rem] mb-10">
@@ -87,10 +55,9 @@ const Acerca = () => {
               Impulsando el crecimiento empresarial
             </h2>
             <p className="text-sm md:text-base text-gray-900/60 font-semibold mt-2 md:max-w-lg">
-              En OpenCode, nuestra misión es clara: crear software que
-              transforme la gestión empresarial en Chile. Con más de 15 años de
-              experiencia, hemos ayudado a decenas de empresas a optimizar sus
-              operaciones y alcanzar sus objetivos de negocio.
+              En Premad, nuestra misión es clara: x cosa en Chile. Con más de 15
+              años de experiencia, hemos ayudado a decenas de empresas a
+              optimizar sus operaciones y alcanzar sus objetivos de negocio.
             </p>
           </div>
           <div className="flex flex-col max-md:items-center md:flex-row max-md:gap-6 justify-between p-6 rounded-3xl md:rounded-full mt-6 border-2 border-primary-500/50">

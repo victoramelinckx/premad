@@ -9,30 +9,54 @@ import {
 } from "@/components/ui/Carousel";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
+import Link from "next/link";
 import { Element } from "react-scroll";
 
 type CarouselDataType = {
   Image: string;
   nombre: string;
   tratamiento: string;
+  tipo: "montaje" | "industrial" | "constructora";
 };
 
-export const Proyectos = () => {
+type ProyectosProps = {
+  tipo?: "montaje" | "industrial" | "constructora" | "home";
+};
+
+export const Proyectos = ({ tipo }: ProyectosProps) => {
+  const filterProjects = () => {
+    if (tipo === "home") return data;
+    return data.filter((item) => item.tipo === tipo);
+  };
+
+  const filteredData = filterProjects();
+
   return (
     <Element
       name="antes/despues"
-      className="w-full overflow-hidden bg-[#0a0d14] pb-8 "
+      className={`w-full overflow-hidden  pb-8 ${
+        tipo != "home" ? "bg-white" : "bg-[#0a0d14]"
+      }`}
     >
       <section className="flex flex-col py-10 lg:py-20 justify-center items-center">
         <div className="flex flex-col w-full mb-10 max-w-6xl px-4">
-          <h3 className="lg:text-[48px] md:text-[36px] text-[32px] leading-tight font-bold text-white">
-            Algunos de nuestros proyectos
+          <h3
+            className={`lg:text-[48px] md:text-[36px] text-[32px] leading-tight font-bold ${
+              tipo != "home" ? "text-black" : "text-white"
+            }`}
+          >
+            Proyectos que construyen el futuro.
           </h3>
-          <p className=" font-medium text-white mt-4">
-            A selection of projects around the world featuring Florim surfaces.
+          <p
+            className={`font-medium mt-4 ${
+              tipo != "home" ? "text-black" : "text-white"
+            }`}
+          >
+            Un vistazo a algunos de nuestros proyectos destacados, construidos
+            con precisión y dedicación.
           </p>
         </div>
-        <div className="w-full max-md:px-4 max-w-7xl overflow-visible relative ">
+        <div className="w-full max-md:px-4 max-w-7xl overflow-visible relative">
           <Carousel
             opts={{
               align: "start",
@@ -45,36 +69,55 @@ export const Proyectos = () => {
             ]}
             className="cursor-grab active:cursor-grabbing"
           >
-            <CarouselContent className=" gap-3">
-              {data.map((item) => (
+            <CarouselContent className="gap-3">
+              {filteredData.map((item) => (
                 <CarouselItem
                   key={item.tratamiento}
-                  className="pl-4 basis-1  md:basis-[450px] min-w-[350px]"
+                  className="pl-4 basis-1 md:basis-[450px] min-w-[350px]"
                 >
-                  <div className="relative h-[450px] rounded-2xl overflow-hidden bg-black/5 group">
-                    <Image
-                      src={item.Image}
-                      alt={`Antes ${item.tratamiento}`}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 350px"
-                    />
-                  </div>
-                  <div className="mt-4 flex flex-col">
-                    <p className="text-white text-xl font-semibold transform transition-all duration-300 group-hover:translate-y-[-4px]">
-                      {item.nombre}
-                    </p>
-                    <p className="text-white text-base mt-2 font-normal transform transition-all duration-300 group-hover:translate-y-[-4px]">
-                      {item.tratamiento}
-                    </p>
-                  </div>
+                  <Link href="/proyecto">
+                    <div
+                      className="relative h-[450px] rounded-2xl overflow-hidden bg-black/5 
+                    group"
+                    >
+                      <Image
+                        src={item.Image}
+                        alt={`Antes ${item.tratamiento}`}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 350px"
+                      />
+                    </div>
+                    <div
+                      className={`mt-4 flex flex-col ${
+                        tipo != "home" ? "text-black" : "text-white"
+                      }`}
+                    >
+                      <p className="text-xl font-semibold transform transition-all duration-300 group-hover:translate-y-[-4px]">
+                        {item.nombre}
+                      </p>
+                      <p className="text-base mt-2 font-normal transform transition-all duration-300 group-hover:translate-y-[-4px]">
+                        {item.tratamiento}
+                      </p>
+                    </div>
+                  </Link>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious
+              className={tipo != "home" ? "bg-black" : "bg-black"}
+            />
+            <CarouselNext
+              className={tipo != "home" ? "bg-black" : "bg-black"}
+            />
           </Carousel>
-          <div className="absolute top-0 right-0 h-full w-1/4 bg-gradient-to-l from-[#0a0d14] to-transparent pointer-events-none" />
+          <div
+            className={`absolute top-0 right-0 h-full w-1/4 bg-gradient-to-l pointer-events-none ${
+              tipo != "home"
+                ? "from-white/50 to-transparent"
+                : "from-[#0a0d14] to-transparent"
+            }`}
+          />
         </div>
       </section>
     </Element>
@@ -84,22 +127,110 @@ export const Proyectos = () => {
 const data: CarouselDataType[] = [
   {
     Image: "/proyectos.png",
-    nombre: "Centro Logístico Industrial",
-    tratamiento: "25,000 m² - Lampa, Santiago",
+    nombre: "Proyecto Santa Cruz",
+    tratamiento: "460 días - 7.640 m² - 130.000 UF.",
+    tipo: "constructora",
   },
   {
     Image: "/proyectos.png",
-    nombre: "Complejo Habitacional Modular",
-    tratamiento: "180 unidades - Concepción",
+    nombre: "Montaje Parque Industrial Biobío",
+    tratamiento: "180 días - 4.820 m² - 780 UF.",
+    tipo: "montaje",
   },
   {
     Image: "/proyectos.png",
-    nombre: "Planta Industrial Prefabricada",
-    tratamiento: "15,000 m² - Antofagasta",
+    nombre: "Parque Industrial Coronel",
+    tratamiento: "120 días - 880 m² - 5.470 UF.",
+    tipo: "industrial",
   },
   {
     Image: "/proyectos.png",
-    nombre: "Centro de Distribución",
-    tratamiento: "32,000 m² - Quilicura",
+    nombre: "Mejoramiento Eje Paicaví",
+    tratamiento: "120 días - 2.040 m² - 10.710 UF.",
+    tipo: "constructora",
+  },
+  {
+    Image: "/proyectos.png",
+    nombre: "Protección Patrimonial Lota",
+    tratamiento: "300 días - 5.340 m² - 53.720 UF.",
+    tipo: "constructora",
+  },
+  {
+    Image: "/proyectos.png",
+    nombre: "Condominio Bosque Valle",
+    tratamiento: "300 días - 24.500 m² - 3.500 UF.",
+    tipo: "constructora",
+  },
+  {
+    Image: "/proyectos.png",
+    nombre: "Proyecto Santa Cruz",
+    tratamiento: "460 días - 7.640 m² - 130.000 UF.",
+    tipo: "constructora",
+  },
+  {
+    Image: "/proyectos.png",
+    nombre: "Montaje Parque Industrial Biobío",
+    tratamiento: "180 días - 4.820 m² - 780 UF.",
+    tipo: "montaje",
+  },
+  {
+    Image: "/proyectos.png",
+    nombre: "Parque Industrial Coronel",
+    tratamiento: "120 días - 880 m² - 5.470 UF.",
+    tipo: "industrial",
+  },
+  {
+    Image: "/proyectos.png",
+    nombre: "Mejoramiento Eje Paicaví",
+    tratamiento: "120 días - 2.040 m² - 10.710 UF.",
+    tipo: "constructora",
+  },
+  {
+    Image: "/proyectos.png",
+    nombre: "Protección Patrimonial Lota",
+    tratamiento: "300 días - 5.340 m² - 53.720 UF.",
+    tipo: "constructora",
+  },
+  {
+    Image: "/proyectos.png",
+    nombre: "Condominio Bosque Valle",
+    tratamiento: "300 días - 24.500 m² - 3.500 UF.",
+    tipo: "constructora",
+  },
+  {
+    Image: "/proyectos.png",
+    nombre: "Proyecto Santa Cruz",
+    tratamiento: "460 días - 7.640 m² - 130.000 UF.",
+    tipo: "constructora",
+  },
+  {
+    Image: "/proyectos.png",
+    nombre: "Montaje Parque Industrial Biobío",
+    tratamiento: "180 días - 4.820 m² - 780 UF.",
+    tipo: "montaje",
+  },
+  {
+    Image: "/proyectos.png",
+    nombre: "Parque Industrial Coronel",
+    tratamiento: "120 días - 880 m² - 5.470 UF.",
+    tipo: "industrial",
+  },
+  {
+    Image: "/proyectos.png",
+    nombre: "Mejoramiento Eje Paicaví",
+    tratamiento: "120 días - 2.040 m² - 10.710 UF.",
+    tipo: "constructora",
+  },
+  {
+    Image: "/proyectos.png",
+    nombre: "Protección Patrimonial Lota",
+    tratamiento: "300 días - 5.340 m² - 53.720 UF.",
+    tipo: "constructora",
+  },
+  {
+    Image: "/proyectos.png",
+    nombre: "Condominio Bosque Valle",
+    tratamiento: "300 días - 24.500 m² - 3.500 UF.",
+    tipo: "constructora",
   },
 ];
