@@ -26,11 +26,11 @@ export const Hero = () => {
       {/* Content Container - Note the z-10 to place it above the background */}
       <div className="relative z-10 flex max-lg:flex-col max-md:pt-32 lg:py-[130px]  w-full lg:w-11/12 max-w-6xl gap-14 lg:gap-6 lg:justify-between">
         <div className="flex flex-col justify-center text-white md:max-lg:items-center gap-3 sm:gap-6 lg:gap-4 max-w-4xl md:max-lg:text-center max-lg:px-6 lg:mr-10">
-          <h1 className="leading-[44px] tracking-[.01em] font-dmsans max-md:text-center font-bold text-[44px] md:text-5xl lg:text-6xl lg:leading-[64px] ">
+          <h1 className="leading-[44px] tracking-[.01em] font-dmsans max-md:text-center font-extrabold text-[44px] md:text-5xl lg:text-6xl lg:leading-[64px] ">
             Innovación y experiencia <br className="2xl:flex hidden" /> en
             construcción industrial.
           </h1>
-          <p className="max-md:mt-4 md:leading-normal max-md:text-center tracking-[.03em] max-sm:font-medium font-[450] text-base max-w-lg mt-2 text-white sm:max-lg:w-4/5">
+          <p className="max-md:mt-4 md:leading-normal max-md:text-center tracking-[.03em] max-sm:font-medium font-[450]  max-w-lg mt-2 text-white/90 sm:max-lg:w-4/5">
             Más de 20 años transformando la construcción modular con soluciones
             industrializadas de alto rendimiento para proyectos a gran escala.
           </p>
@@ -74,23 +74,17 @@ export const Hero = () => {
           <div className="w-full flex flex-col md:hidden">
             <div className="flex flex-row justify-around w-full mb-6">
               <div className="flex flex-col items-center">
-                <p className="text-4xl lg:text-5xl font-medium leading-none">
-                  200+
-                </p>
-                <span>Proyectos completados</span>
+                <p className="text-5xl font-medium leading-none">200+</p>
+                <p>Proyectos completados</p>
               </div>
               <div className="flex flex-col items-center">
-                <p className="text-4xl lg:text-5xl font-medium leading-none">
-                  500+
-                </p>
+                <p className="text-5xl font-medium leading-none">500+</p>
                 <p>Clientes felices</p>
               </div>
             </div>
             <div className="flex flex-col items-center w-full">
-              <p className="text-4xl lg:text-5xl font-medium leading-none">
-                1200
-              </p>
-              <p>Profesionales especializados</p>
+              <p className="text-5xl font-medium leading-none">120</p>
+              <p className="">Profesionales especializados</p>
             </div>
           </div>
 
@@ -98,7 +92,7 @@ export const Hero = () => {
           <div className="hidden md:flex md:flex-col md:space-y-12">
             <div className="flex flex-col">
               <p className="text-[78px] font-medium leading-none mb-2">200+</p>
-              <span>Proyectos completados</span>
+              <p>Proyectos completados</p>
             </div>
             <div className="flex flex-col">
               <p className="text-[78px] font-medium leading-none mb-2">500+</p>

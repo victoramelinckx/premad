@@ -69,7 +69,7 @@ export const Proyectos = ({ tipo }: ProyectosProps) => {
             ]}
             className="cursor-grab active:cursor-grabbing"
           >
-            <CarouselContent className="gap-3">
+            <CarouselContent className="md:gap-3">
               {filteredData.map((item) => (
                 <CarouselItem
                   key={item.tratamiento}

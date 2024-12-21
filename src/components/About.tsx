@@ -8,7 +8,7 @@ export const About = () => {
   return (
     <Element name="acerca" className="w-full flex justify-center">
       <div className=" my-10 lg:my-20 w-full max-w-6xl px-8 md:px-4">
-        <section className="flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-16">
+        <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
           {/* Contenedor del texto - Ahora con flex y centrado vertical */}
           <div className="w-full lg:w-[45%] flex flex-col justify-center">
             <div>

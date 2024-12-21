@@ -19,7 +19,7 @@ export const Cta2 = () => {
         viewport={{ once: true, amount: 0.25 }}
       >
         <div className="w-full md:w-1/2">
-          <h2 className="lg:text-[48px] md:text-[32px] text-[28px] leading-tight font-bold mb-8">
+          <h2 className="lg:text-[48px] text-[32px] leading-tight font-bold mb-4 md:mb-8">
             ¿Listo para transformar tu próximo proyecto?
           </h2>
           <p className=" font-medium">
@@ -49,11 +49,11 @@ export const Cta2 = () => {
         <div className="w-full md:w-1/2">
           <form className="grid grid-flow-row gap-4">
             <input
-              className="p-4 rounded-[30px] border-none bg-primary-200/40 text-white/70 placeholder:text-white/70 max-lg:text-sm font-semibold"
+              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white/70 placeholder:text-white/70 max-lg:text-sm font-semibold"
               placeholder="Nombre"
             />
             <input
-              className="p-4 rounded-[30px] border-none bg-primary-200/40 text-white/70 placeholder:text-white/70 max-lg:text-sm font-semibold"
+              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white/70 placeholder:text-white/70 max-lg:text-sm font-semibold"
               placeholder="E-mail"
             />
             <input

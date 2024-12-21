@@ -163,7 +163,7 @@ const ServiceCard: FC<ServiceCardProps> = ({
           className="w-16 h-16 z-10 self-start"
         />
         <h3 className="z-10 font-bold text-3xl text-start">{title}</h3>
-        <p className="z-10">{description}</p>
+        <p className="z-10 text-base">{description}</p>
       </div>
     </div>
   </Link>

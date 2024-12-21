@@ -66,9 +66,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body
-        className={`${monserrat.variable}  ${dmSans.variable} font-monserrat`}
-      >
+      <body className={`${monserrat.variable}  ${dmSans.variable} font-dmsans`}>
         <SchemaMarkup />
         {children}
         <Toaster position="bottom-right" />

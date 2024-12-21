@@ -2,13 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  p {
+    @apply text-[18px];
+  }
+}
+
 .split-letter {
   position: relative;
   display: inline-block;
 }
 
 .split-letter::before {
-  content: 'o';
+  content: "o";
   position: absolute;
   left: 0;
   width: 30.5px;
