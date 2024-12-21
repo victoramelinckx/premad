@@ -1,5 +1,5 @@
 "use client";
-
+import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,7 +9,7 @@ export const Services = () => {
       <div className="flex flex-col w-full lg:w-11/12 max-w-6xl py-10 lg:py-20 max-md:px-5 md:max-lg:px-12 gap-6">
         <div className="flex flex-col items-center text-black">
           <h2 className=" lg:text-[48px]  text-[36px] leading-tight font-bold text-start w-full lg:text-center">
-            Nuestras areas.
+            Nuestras áreas.
           </h2>
           <p className="lg:text-center text-gray-700 font-medium max-w-lg mt-2  ">
             Soluciones integrales en construcción industrial y modular,
@@ -17,84 +17,9 @@ export const Services = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 lg:gap-y-8 lg:mt-4">
-          <Link href={"/viviendas_industrializadas"}>
-            <div className="relative w-full h-[464px] lg:h-[500px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
-              {/* Background Image Container */}
-              <div className="absolute inset-0 w-full h-full z-0">
-                <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
-                {/* Overlay */}
-                <Image
-                  src="/imagenes/industria.png"
-                  alt="Construction background"
-                  fill
-                  style={{ objectFit: "cover" }}
-                  priority
-                  className="z-0"
-                />
-              </div>
-              <h3 className="z-10 font-bold text-3xl text-center">
-                Viviendas Industrilizadas
-              </h3>
-              <p className="z-10 text-center px-4">
-                Construcción modular de alta eficiencia para proyectos
-                residenciales, optimizando tiempos y recursos sin comprometer la
-                calidad.
-              </p>
-            </div>
-          </Link>
-
-          {/* Segundo */}
-          <Link href={"/montaje_industrial"}>
-            <div className="relative w-full h-[464px] lg:h-[500px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
-              {/* Background Image Container */}
-              <div className="absolute inset-0 w-full h-full z-0">
-                <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
-                {/* Overlay */}
-                <Image
-                  src="/componentes.png"
-                  alt="Construction background"
-                  fill
-                  style={{ objectFit: "cover" }}
-                  priority
-                  className="z-0"
-                />
-              </div>
-              <h3 className="z-10 font-bold text-3xl text-center">
-                Montaje Industrial
-              </h3>
-              <p className="z-10 text-center px-4">
-                Fabricación y montaje de elementos constructivos estandarizados
-                que garantizan precisión y rapidez en la ejecución de proyectos.
-              </p>
-            </div>
-          </Link>
-
-          {/* Tercero */}
-          <Link href={"/constructora"}>
-            <div className="relative w-full h-[464px] lg:h-[500px] flex flex-col justify-center items-center rounded-lg overflow-hidden space-y-4 text-white">
-              {/* Background Image Container */}
-              <div className="absolute inset-0 w-full h-full z-0">
-                <div className="absolute inset-0 bg-black/60 z-[1]" />{" "}
-                {/* Overlay */}
-                <Image
-                  src="/constructora.png"
-                  alt="Construction background"
-                  fill
-                  style={{ objectFit: "cover" }}
-                  priority
-                  className="z-0"
-                />
-              </div>
-              <h3 className="z-10 font-bold text-3xl text-center">
-                Constructora
-              </h3>
-              <p className="z-10 text-center px-4">
-                Servicios integrales de construcción industrial con los más
-                altos estándares de calidad y seguridad para proyectos de gran
-                envergadura.
-              </p>
-            </div>
-          </Link>
+          {services.map((service, index) => (
+            <ServiceCard key={index} {...service} />
+          ))}
         </div>
       </div>
     </section>
@@ -197,5 +122,79 @@ export const sofwareList = [
       "Comunicación con apoderados",
     ],
     href: "producto/administracion_de_colegios",
+  },
+];
+
+interface ServiceCardProps {
+  href: string;
+  image: string;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+interface Service extends ServiceCardProps {}
+
+const ServiceCard: FC<ServiceCardProps> = ({
+  href,
+  image,
+  icon,
+  title,
+  description,
+}) => (
+  <Link href={href}>
+    <div className="relative w-full h-[454px] flex flex-col justify-center items-center px-8 rounded-lg overflow-hidden space-y-4 text-white">
+      {/* Background Image Container */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <div className="absolute inset-0 bg-black/60 z-[1]" />
+        <Image
+          src={image}
+          alt={`${title} background`}
+          fill
+          style={{ objectFit: "cover" }}
+          priority
+          className="z-0"
+        />
+      </div>
+      <div className="flex flex-col w-full justify-start gap-4">
+        <img
+          src={icon}
+          alt={`${title} icon`}
+          className="w-16 h-16 z-10 self-start"
+        />
+        <h3 className="z-10 font-bold text-3xl text-start">{title}</h3>
+        <p className="z-10">{description}</p>
+      </div>
+    </div>
+  </Link>
+);
+
+{
+  /* Services Content */
+}
+const services = [
+  {
+    href: "/viviendas_industrializadas",
+    image: "/imagenes/industria.png",
+    icon: "/icons/house.svg",
+    title: "Viviendas Industrilizadas",
+    description:
+      "Construcción modular de alta eficiencia para proyectos residenciales, optimizando tiempos y recursos sin comprometer la calidad.",
+  },
+  {
+    href: "/montaje_industrial",
+    image: "/componentes.png",
+    icon: "/icons/roof.svg",
+    title: "Montaje Industrial",
+    description:
+      "Fabricación y montaje de elementos constructivos estandarizados que garantizan precisión y rapidez en la ejecución de proyectos.",
+  },
+  {
+    href: "/constructora",
+    image: "/constructora.png",
+    icon: "/icons/construction.svg",
+    title: "Constructora",
+    description:
+      "Servicios integrales de construcción industrial con los más altos estándares de calidad y seguridad para proyectos de gran envergadura.",
   },
 ];

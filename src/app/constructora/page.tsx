@@ -3,12 +3,7 @@ import Footer from "@/components/Footer";
 import LogoCarousel from "@/components/LogoCarousel";
 import { Navbar } from "@/components/Navbar";
 import Image from "next/image";
-import { FaDownload } from "react-icons/fa6";
-import { FiThumbsUp } from "react-icons/fi";
-import { GoPeople } from "react-icons/go";
-import { Faq } from "@/components/Faq";
-import { Cta } from "@/components/Cta";
-import { Testimonios } from "@/components/Testimonios";
+
 import Montaje from "../../../public/imagenes/montaje_Industrial.png";
 import { Proyectos } from "@/components/Proyectos";
 import Fondo from "../../../public/imagenes/image_10.png";
@@ -63,6 +58,7 @@ const Constructora = () => {
                   construidos con precisión y dedicación.
                 </p>
               </div>
+
               <button className="px-5 py-3 bg-primary-500 text-white rounded-lg font-semibold">
                 Contáctanos
               </button>

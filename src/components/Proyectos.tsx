@@ -73,7 +73,7 @@ export const Proyectos = ({ tipo }: ProyectosProps) => {
               {filteredData.map((item) => (
                 <CarouselItem
                   key={item.tratamiento}
-                  className="pl-4 basis-1 md:basis-[450px] min-w-[350px]"
+                  className="md:pl-4 basis-1 md:basis-[450px] min-w-[350px]"
                 >
                   <Link href="/proyecto">
                     <div
@@ -105,10 +105,10 @@ export const Proyectos = ({ tipo }: ProyectosProps) => {
               ))}
             </CarouselContent>
             <CarouselPrevious
-              className={tipo != "home" ? "bg-black" : "bg-black"}
+              className={tipo != "home" ? "bg-black" : "bg-transparent"}
             />
             <CarouselNext
-              className={tipo != "home" ? "bg-black" : "bg-black"}
+              className={tipo != "home" ? "bg-black" : "bg-transparent"}
             />
           </Carousel>
           <div
