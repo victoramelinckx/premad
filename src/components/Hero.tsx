@@ -34,7 +34,7 @@ export const Hero = () => {
             Más de 20 años transformando la construcción modular con soluciones
             industrializadas de alto rendimiento para proyectos a gran escala.
           </p>
-          <div className="flex flex-col lg:flex-row max-md:items-center space-x-6 mt-4">
+          <div className="flex flex-col lg:flex-row max-md:items-center md:space-x-6 mt-4">
             {/* <button className="mt-3 text-lg flex items-center gap-1 rounded-full bg-primary-500 px-6 py-3 max-md:w-2/3 max-md:justify-center max-md:text-center text-black font-semibold w-fit hover:opacity-70">
               Nuestros servicios
             </button> */}
