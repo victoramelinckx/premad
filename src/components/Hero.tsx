@@ -42,8 +42,8 @@ export const Hero = () => {
               Contáctenos
             </button> */}
             <Link
-              key="contacto"
-              to="contacto"
+              key="proyecto"
+              to="proyectos"
               smooth
               spy
               offset={-72}

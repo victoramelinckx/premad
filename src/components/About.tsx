@@ -2,7 +2,8 @@
 
 import Acercade from "../../public/imagenes/premad_acerca.png";
 import Image from "next/image";
-import { Element } from "react-scroll";
+import { Element, Link } from "react-scroll";
+import { Button } from "./Button";
 
 export const About = () => {
   return (
@@ -26,9 +27,22 @@ export const About = () => {
                 metodología integrada garantiza resultados excepcionales desde
                 el diseño hasta la ejecución final.
               </p>
-              <button className=" mt-[30px] lg:mt-10 text-lg flex items-center gap-1 rounded-full bg-white/30 blur-xs border-solid border-2  px-6 py-3 text-black border-black font-semibold w-fit hover:opacity-70">
+              {/* <button className=" mt-[30px] lg:mt-10 text-lg flex items-center gap-1 rounded-full bg-white/30 blur-xs border-solid border-2  px-6 py-3 text-black border-black font-semibold w-fit hover:opacity-70">
                 Nuestros proyectos
-              </button>
+              </button> */}
+              <Link
+                key="proyecto"
+                to="proyectos"
+                smooth
+                spy
+                offset={-72}
+                className=""
+              >
+                <Button
+                  title="Nuestros proyectos"
+                  className="mt-[30px] lg:mt-10 text-lg flex items-center gap-1 rounded-full bg-white/30 blur-xs border-solid border-2  px-6 py-3 text-black border-black font-semibold w-fit hover:opacity-70"
+                />
+              </Link>
               {/* <Link
                 key="contacto"
                 to="contacto"
