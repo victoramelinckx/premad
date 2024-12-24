@@ -50,7 +50,7 @@ export const Hero = () => {
               className=""
             >
               <Button
-                title="Nuestros servicios"
+                title="Nuestras áreas"
                 className="mt-3  bg-primary-500 px-6 py-3  text-black font-semibold w-fit hover:opacity-70"
               />
             </Link>
