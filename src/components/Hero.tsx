@@ -31,8 +31,8 @@ export const Hero = () => {
             construcción.
           </h1>
           <p className="max-md:mt-4 md:leading-normal max-md:text-center tracking-[.03em] max-sm:font-medium font-[450]  max-w-lg mt-2 text-white/90 sm:max-lg:w-4/5">
-            Más de 20 años transformando la construcción modular con soluciones
-            industrializadas de alto rendimiento para proyectos a gran escala.
+            Más de 20 años transformando la construcción con soluciones de alto
+            rendimiento para proyectos a gran escala.
           </p>
           <div className="flex flex-col lg:flex-row max-md:items-center md:space-x-6 mt-4">
             {/* <button className="mt-3 text-lg flex items-center gap-1 rounded-full bg-primary-500 px-6 py-3 max-md:w-2/3 max-md:justify-center max-md:text-center text-black font-semibold w-fit hover:opacity-70">
