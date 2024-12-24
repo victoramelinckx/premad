@@ -28,7 +28,7 @@ export const Hero = () => {
         <div className="flex flex-col justify-center text-white md:max-lg:items-center gap-3 sm:gap-6 lg:gap-4 max-w-4xl md:max-lg:text-center max-lg:px-6 lg:mr-10">
           <h1 className="leading-[44px] tracking-[.01em] font-dmsans max-md:text-center font-extrabold text-[44px] md:text-5xl lg:text-6xl lg:leading-[64px] ">
             Innovación y experiencia <br className="2xl:flex hidden" /> en
-            construcción industrial.
+            construcción.
           </h1>
           <p className="max-md:mt-4 md:leading-normal max-md:text-center tracking-[.03em] max-sm:font-medium font-[450]  max-w-lg mt-2 text-white/90 sm:max-lg:w-4/5">
             Más de 20 años transformando la construcción modular con soluciones
