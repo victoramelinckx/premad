@@ -91,16 +91,22 @@ export const Hero = () => {
           {/* Desktop layout */}
           <div className="hidden md:flex md:flex-col md:space-y-12">
             <div className="flex flex-col">
-              <p className="text-[78px] font-medium leading-none mb-2">200+</p>
-              <p>Proyectos completados</p>
+              <p className="text-[78px] font-medium leading-none mb-2">
+                10.000+
+              </p>
+              <p>Horas en Proyectos de Ingenería</p>
             </div>
             <div className="flex flex-col">
-              <p className="text-[78px] font-medium leading-none mb-2">500+</p>
-              <p>Clientes felices</p>
+              <p className="text-[78px] font-medium leading-none mb-2">
+                52.000
+              </p>
+              <p>M2 en Obras Civiles</p>
             </div>
             <div className="flex flex-col">
-              <p className="text-[78px] font-medium leading-none mb-2">1200</p>
-              <p>Profesionales especializados</p>
+              <p className="text-[78px] font-medium leading-none mb-2">
+                25.000
+              </p>
+              <p>M2 en Proyectos Inmobiliarios</p>
             </div>
           </div>
         </div>

@@ -133,9 +133,9 @@ const data: CarouselDataType[] = [
   },
   {
     Image: "/proyectos.png",
-    nombre: "Montaje Parque Industrial Biobío",
+    nombre: "Parque Industrial Biobío",
     tratamiento: "180 días - 4.820 m² - 780 UF.",
-    tipo: "montaje",
+    tipo: "industrial",
   },
   {
     Image: "/proyectos.png",
@@ -161,6 +161,7 @@ const data: CarouselDataType[] = [
     tratamiento: "300 días - 24.500 m² - 3.500 UF.",
     tipo: "constructora",
   },
+
   {
     Image: "/proyectos.png",
     nombre: "Proyecto Santa Cruz",
