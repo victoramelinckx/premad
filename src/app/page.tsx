@@ -8,18 +8,22 @@ import { Video } from "@/components/Video";
 import { Proyectos } from "@/components/Proyectos";
 import { Clientes } from "@/components/Clientes";
 import { Cta2 } from "@/components/Cta2";
+import { Hero1 } from "@/components/Hero1";
+import { Areas } from "@/components/Areas";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center">
       <Navbar />
-      <Hero />
+      <Hero1 />
+      <About />
       {/* <AfterHero /> */}
+      <Areas />
+      <Clientes />
       <Services />
       {/* <Beneficios /> */}
-      <About />
-      <Clientes />
-      <Video videoId="1U2AL8abSgg" />
+
+      {/* <Video videoId="1U2AL8abSgg" /> */}
 
       <Proyectos tipo="home" />
       {/* <Precios />

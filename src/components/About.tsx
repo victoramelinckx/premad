@@ -39,7 +39,7 @@ export const About = () => {
                 className=""
               >
                 <Button
-                  title="Nuestros proyectos"
+                  title="Nuestras áreas"
                   className="mt-[30px] lg:mt-10 text-lg flex items-center gap-1 rounded-full bg-white/30 blur-xs border-solid border-2  px-6 py-3 text-black border-black font-semibold w-fit hover:opacity-70"
                 />
               </Link>
