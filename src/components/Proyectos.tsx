@@ -241,19 +241,19 @@ const data: CarouselDataType[] = [
     tipo: "servicio",
   },
   {
-    Image: "/imagenes/imagen2.jpg",
+    Image: "/imagenes/imagen2.jpeg",
     nombre: "Condominio Bosque Valle",
     tratamiento: "300 días - 24.500 m² - 3.500 UF.",
     tipo: "servicio",
   },
   {
-    Image: "/imagenes/imagen3.jpg",
+    Image: "/imagenes/imagen3.jpeg",
     nombre: "Condominio Bosque Valle",
     tratamiento: "300 días - 24.500 m² - 3.500 UF.",
     tipo: "servicio",
   },
   {
-    Image: "/imagenes/imagen4.jpg",
+    Image: "/imagenes/imagen4.jpeg",
     nombre: "Condominio Bosque Valle",
     tratamiento: "300 días - 24.500 m² - 3.500 UF.",
     tipo: "servicio",
