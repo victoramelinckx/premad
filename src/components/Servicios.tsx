@@ -17,8 +17,8 @@ export const Servicios = () => {
             Nuestros servicios.
           </h2>
           <p className="lg:text-center text-white font-medium max-w-lg mt-2  ">
-            Soluciones integrales en construcción industrial y modular,
-            respaldadas por más de 20 años de experiencia.
+            Servicios de ingeniería especializados con soluciones técnicas
+            innovadoras y eficientes para proyectos industriales.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-y-6 lg:gap-y-8 lg:mt-4">
@@ -67,77 +67,111 @@ const ServiceCard: FC<ServiceCardProps> = ({ icon, title, description }) => (
 {
   /* Services Content */
 }
+
 const serviciosLista = [
   {
-    icon: "/icons/house.svg",
-    title: "Obras Civiles",
+    icon: "/icons/ingeneria.svg",
+    title: "FEED",
     description:
-      "Desarrollo y ejecución de proyectos de infraestructura civil con los más altos estándares de calidad y seguridad.",
+      "Front End Engineering Design: Desarrollo detallado de ingeniería preliminar para optimizar la viabilidad y eficiencia de proyectos.",
   },
   {
-    icon: "/icons/house.svg",
-    title: "Proyectos Inmobiliarios",
+    icon: "/icons/epc.svg",
+    title: "EPC",
     description:
-      "Gestión integral de proyectos inmobiliarios, desde la planificación hasta la entrega final, garantizando excelencia en cada etapa.",
+      "Engineering, Procurement and Construction: Gestión integral de proyectos desde el diseño hasta la construcción final.",
   },
   {
-    icon: "/icons/house.svg",
-    title: "Proyectos Industriales",
+    icon: "/icons/opc.svg",
+    title: "OP&M",
     description:
-      "Soluciones completas para el sector industrial, incluyendo diseño, construcción y mantenimiento de instalaciones.",
+      "Operation and Maintenance: Servicios especializados de operación y mantenimiento para garantizar la continuidad operativa.",
   },
   {
-    icon: "/icons/house.svg",
-    title: "Construcción Retail",
+    icon: "/icons/idm.svg",
+    title: "I+D+i",
     description:
-      "Especialistas en construcción y remodelación de espacios comerciales, adaptándonos a las necesidades específicas del retail.",
+      "Investigación, Desarrollo e Innovación: Desarrollo de soluciones tecnológicas avanzadas para optimizar procesos industriales.",
   },
   {
-    icon: "/icons/house.svg",
-    title: "Refinación",
+    icon: "/icons/consultoria.svg",
+    title: "Consultoría LONCURA",
     description:
-      "Servicios especializados para la industria de refinación, garantizando eficiencia y cumplimiento de normativas.",
-  },
-  {
-    icon: "/icons/house.svg",
-    title: "Energía",
-    description:
-      "Desarrollo de proyectos energéticos, enfocados en la eficiencia y sostenibilidad del sector.",
-  },
-  {
-    icon: "/icons/house.svg",
-    title: "Minería",
-    description:
-      "Servicios integrales para el sector minero, desde infraestructura hasta mantenimiento especializado.",
-  },
-  {
-    icon: "/icons/house.svg",
-    title: "Terminales Marítimos",
-    description:
-      "Construcción y mantenimiento de infraestructura portuaria y terminales marítimos.",
-  },
-  {
-    icon: "/icons/house.svg",
-    title: "Industria Pesquera",
-    description:
-      "Soluciones especializadas para el sector pesquero, incluyendo instalaciones y equipamiento industrial.",
-  },
-  {
-    icon: "/icons/house.svg",
-    title: "Manufactura",
-    description:
-      "Servicios completos para el sector manufacturero, optimizando procesos y espacios industriales.",
-  },
-  {
-    icon: "/icons/house.svg",
-    title: "Celulosa y Papel",
-    description:
-      "Experiencia en proyectos para la industria de celulosa y papel, garantizando eficiencia operativa.",
-  },
-  {
-    icon: "/icons/house.svg",
-    title: "Combustibles",
-    description:
-      "Desarrollo de infraestructura y servicios especializados para el sector de combustibles.",
+      "Servicios integrales de consultoría incluyendo: gestión ambiental, sistemas de gestión integral, análisis de riesgos, auditorías, servicios temporarios, capacitaciones, selección de personal y coaching empresarial.",
   },
 ];
+
+// const serviciosLista = [
+//   {
+//     icon: "/icons/civiles.svg",
+//     title: "Obras Civiles",
+//     description:
+//       "Desarrollo y ejecución de proyectos de infraestructura civil con los más altos estándares de calidad y seguridad.",
+//   },
+//   {
+//     icon: "/icons/building.svg",
+//     title: "Proyectos Inmobiliarios",
+//     description:
+//       "Gestión integral de proyectos inmobiliarios, desde la planificación hasta la entrega final, garantizando excelencia en cada etapa.",
+//   },
+//   {
+//     icon: "/icons/industry.svg",
+//     title: "Proyectos Industriales",
+//     description:
+//       "Soluciones completas para el sector industrial, incluyendo diseño, construcción y mantenimiento de instalaciones.",
+//   },
+//   {
+//     icon: "/icons/home.svg",
+//     title: "Construcción Retail",
+//     description:
+//       "Especialistas en construcción y remodelación de espacios comerciales, adaptándonos a las necesidades específicas del retail.",
+//   },
+//   {
+//     icon: "/icons/refinacioon.svg",
+//     title: "Refinación",
+//     description:
+//       "Servicios especializados para la industria de refinación, garantizando eficiencia y cumplimiento de normativas.",
+//   },
+//   {
+//     icon: "/icons/house.svg",
+//     title: "Energía",
+//     description:
+//       "Desarrollo de proyectos energéticos, enfocados en la eficiencia y sostenibilidad del sector.",
+//   },
+//   {
+//     icon: "/icons/house.svg",
+//     title: "Minería",
+//     description:
+//       "Servicios integrales para el sector minero, desde infraestructura hasta mantenimiento especializado.",
+//   },
+//   {
+//     icon: "/icons/house.svg",
+//     title: "Terminales Marítimos",
+//     description:
+//       "Construcción y mantenimiento de infraestructura portuaria y terminales marítimos.",
+//   },
+//   {
+//     icon: "/icons/house.svg",
+//     title: "Industria Pesquera",
+//     description:
+//       "Soluciones especializadas para el sector pesquero, incluyendo instalaciones y equipamiento industrial.",
+//   },
+//   {
+//     icon: "/icons/house.svg",
+//     title: "Manufactura",
+//     description:
+//       "Servicios completos para el sector manufacturero, optimizando procesos y espacios industriales.",
+//   },
+//   {
+//     icon: "/icons/house.svg",
+//     title: "Celulosa y Papel",
+//     description:
+//       "Experiencia en proyectos para la industria de celulosa y papel, garantizando eficiencia operativa.",
+//   },
+//   {
+//     icon: "/icons/house.svg",
+//     title: "Combustibles",
+//     description:
+//       "Desarrollo de infraestructura y servicios especializados para el sector de combustibles.",
+//   },
+// ];
