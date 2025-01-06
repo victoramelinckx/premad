@@ -50,9 +50,13 @@ interface ServiceCardProps {
 interface Service extends ServiceCardProps {}
 
 const ServiceCard: FC<ServiceCardProps> = ({ icon, title, description }) => (
-  <div className=" w-full h-full flex flex-col lg:flex-row border bg-[#292d314f]  border-gray-200/50 p-8 lg:px-16 lg:py-10 rounded-lg overflow-hidden space-x-6 lg:space-x-8 text-white">
+  <div className=" w-full h-full flex flex-col lg:flex-row border bg-[#292d314f]  border-gray-200/50 p-8 lg:px-16 lg:py-10 rounded-lg overflow-hidden max-lg:space-y-6 lg:space-x-8 text-white">
     {/* Background Image Container */}
-    <img src={icon} alt={`${title} icon`} className="w-20 h-20 z-10 " />
+    <img
+      src={icon}
+      alt={`${title} icon`}
+      className="w-16 h-16 lg:w-20 lg:h-20 z-10 "
+    />
     <div className="flex flex-col w-full justify-start gap-4">
       <h3 className="z-10 font-semibold text-3xl text-start">{title}</h3>
       <p className="z-10 text-base max-w-2xl">{description}</p>
