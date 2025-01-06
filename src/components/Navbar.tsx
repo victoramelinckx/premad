@@ -120,7 +120,7 @@ const NavbarContent = ({
           <img
             src="/premad_logo.png"
             className={`${
-              isScrollNav ? "w-24" : "w-28 lg:w-36 "
+              isScrollNav ? "w-20" : "w-28 lg:w-36 "
             } transition-all duration-700`}
             alt="Plumbing Solutions in Miami. Jdenx Solutions."
           />
