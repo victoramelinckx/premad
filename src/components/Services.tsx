@@ -9,7 +9,7 @@ export const Services = () => {
       <div className="flex flex-col w-full lg:w-11/12 max-w-6xl py-10 lg:py-20 max-md:px-5 md:max-lg:px-12 gap-6">
         <div className="flex flex-col items-center text-black">
           <h2 className=" lg:text-[48px]  text-[36px] leading-tight font-bold text-start w-full lg:text-center">
-            Nuestras áreas.
+            Nuestros servicios.
           </h2>
           <p className="lg:text-center text-gray-700 font-medium max-w-lg mt-2  ">
             Soluciones integrales en construcción industrial y modular,

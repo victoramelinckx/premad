@@ -16,11 +16,11 @@ type CarouselDataType = {
   Image: string;
   nombre: string;
   tratamiento: string;
-  tipo: "montaje" | "industrial" | "constructora";
+  tipo: "montaje" | "industrial" | "constructora" | "servicio";
 };
 
 type ProyectosProps = {
-  tipo?: "montaje" | "industrial" | "constructora" | "home";
+  tipo?: "montaje" | "industrial" | "constructora" | "home" | "servicio";
 };
 
 export const Proyectos = ({ tipo }: ProyectosProps) => {
@@ -233,5 +233,35 @@ const data: CarouselDataType[] = [
     nombre: "Condominio Bosque Valle",
     tratamiento: "300 días - 24.500 m² - 3.500 UF.",
     tipo: "constructora",
+  },
+  {
+    Image: "/imagenes/imagen1.jpeg",
+    nombre: "Condominio Bosque Valle",
+    tratamiento: "300 días - 24.500 m² - 3.500 UF.",
+    tipo: "servicio",
+  },
+  {
+    Image: "/imagenes/imagen2.jpg",
+    nombre: "Condominio Bosque Valle",
+    tratamiento: "300 días - 24.500 m² - 3.500 UF.",
+    tipo: "servicio",
+  },
+  {
+    Image: "/imagenes/imagen2.jpg",
+    nombre: "Condominio Bosque Valle",
+    tratamiento: "300 días - 24.500 m² - 3.500 UF.",
+    tipo: "servicio",
+  },
+  {
+    Image: "/imagenes/imagen4.jpg",
+    nombre: "Condominio Bosque Valle",
+    tratamiento: "300 días - 24.500 m² - 3.500 UF.",
+    tipo: "servicio",
+  },
+  {
+    Image: "/imagenes/imagen4.jpg",
+    nombre: "Condominio Bosque Valle",
+    tratamiento: "300 días - 24.500 m² - 3.500 UF.",
+    tipo: "servicio",
   },
 ];

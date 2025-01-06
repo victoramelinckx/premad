@@ -3,6 +3,7 @@ import { FC, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Element } from "react-scroll";
+import { Clientes } from "./Clientes";
 
 export const Areas = () => {
   const [showAll, setShowAll] = useState(false);
@@ -28,7 +29,7 @@ export const Areas = () => {
             ))}
           </div>
           {services.length > 6 && (
-            <div className=" mt-4 ml-4">
+            <div className=" mt-2 ml-4">
               <button
                 onClick={() => setShowAll(!showAll)}
                 className=" text-black font-semibold hover:text-primary-500 transition-all duration-300  ease-linear"
@@ -38,6 +39,8 @@ export const Areas = () => {
             </div>
           )}
         </div>
+        <Clientes />
+        <div className="mb-10 lg:mb-20" />
       </section>
     </Element>
   );

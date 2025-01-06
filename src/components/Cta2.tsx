@@ -8,7 +8,7 @@ import { MdEmail } from "react-icons/md";
 export const Cta2 = () => {
   return (
     <Element
-      className="w-full text-white py-10 flex justify-center"
+      className="w-full text-white pb-10 flex justify-center"
       name="contacto"
     >
       <motion.div

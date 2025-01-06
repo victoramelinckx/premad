@@ -10,6 +10,7 @@ import { Clientes } from "@/components/Clientes";
 import { Cta2 } from "@/components/Cta2";
 import { Hero1 } from "@/components/Hero1";
 import { Areas } from "@/components/Areas";
+import { Servicios } from "@/components/Servicios";
 
 export default function Home() {
   return (
@@ -19,9 +20,10 @@ export default function Home() {
       <About />
       {/* <AfterHero /> */}
       <Areas />
-      <Clientes />
+      {/* <Clientes /> */}
       <Proyectos tipo="home" />
-      <Services />
+      <Servicios />
+      <Proyectos tipo="servicio" />
       {/* <Beneficios /> */}
 
       {/* <Video videoId="1U2AL8abSgg" /> */}
