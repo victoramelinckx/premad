@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     "Professional plumbing services in Miami. 24/7 emergency repairs, installations, and maintenance.",
   keywords:
     "plumber, Miami plumber, plumbing services, emergency plumbing, pipe repair",
+  themeColor: "#000000",
   icons: {
     icon: [
       { url: "favicons/favicon.ico" },
