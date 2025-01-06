@@ -26,7 +26,7 @@ export const Hero1 = () => {
       {/* Content Container - Note the z-10 to place it above the background */}
       <div className="relative z-10 flex max-lg:flex-col max-md:pt-32 lg:py-[130px]  w-full lg:w-11/12 max-w-6xl gap-14 lg:gap-6 lg:justify-between">
         <div className="flex flex-col justify-center text-white md:max-lg:items-center gap-3 sm:gap-6 lg:gap-4 max-w-4xl md:max-lg:text-center max-lg:px-6 lg:mr-10">
-          <h1 className="leading-[44px] tracking-[.01em] font-dmsans max-md:text-center font-extrabold text-[40px] md:text-5xl lg:text-6xl lg:leading-[64px] ">
+          <h1 className="leading-[40px] tracking-[.01em] font-dmsans max-md:text-center font-extrabold text-[40px] md:text-5xl md:leading-[48px] lg:text-6xl lg:leading-[64px] ">
             Innovación y experiencia <br className="2xl:flex hidden" /> en
             montaje industrial.
           </h1>
