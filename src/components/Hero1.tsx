@@ -26,7 +26,7 @@ export const Hero1 = () => {
       {/* Content Container - Note the z-10 to place it above the background */}
       <div className="relative z-10 flex max-lg:flex-col max-md:pt-32 lg:py-[130px]  w-full lg:w-11/12 max-w-6xl gap-14 lg:gap-6 lg:justify-between">
         <div className="flex flex-col justify-center text-white md:max-lg:items-center gap-3 sm:gap-6 lg:gap-4 max-w-4xl md:max-lg:text-center max-lg:px-6 lg:mr-10">
-          <h1 className="leading-[44px] tracking-[.01em] font-dmsans max-md:text-center font-extrabold text-[44px] md:text-5xl lg:text-6xl lg:leading-[64px] ">
+          <h1 className="leading-[44px] tracking-[.01em] font-dmsans max-md:text-center font-extrabold text-[40px] md:text-5xl lg:text-6xl lg:leading-[64px] ">
             Innovación y experiencia <br className="2xl:flex hidden" /> en
             montaje industrial.
           </h1>
@@ -73,18 +73,24 @@ export const Hero1 = () => {
           {/* Container for mobile layout */}
           <div className="w-full flex flex-col md:hidden">
             <div className="flex flex-row justify-around w-full mb-6">
-              <div className="flex flex-col items-center">
-                <p className="text-5xl font-medium leading-none">10.000+</p>
-                <p>Horas en Proyectos de Ingenería</p>
+              <div className="flex flex-col items-center justify-center">
+                <p className="text-4xl font-medium leading-none">10.000+</p>
+                <p className=" text-sm self-center text-center">
+                  Horas en Proyectos <br /> de Ingenería
+                </p>
               </div>
-              <div className="flex flex-col items-center">
-                <p className="text-5xl font-medium leading-none">52.000</p>
-                <p>M2 en Obras Civiles</p>
+              <div className="flex flex-col items-center justify-center">
+                <p className="text-4xl font-medium leading-none">52.000</p>
+                <p className="text-sm self-center text-center">
+                  M2 en Obras <br /> Civiles
+                </p>
               </div>
             </div>
             <div className="flex flex-col items-center w-full">
-              <p className="text-5xl font-medium leading-none">25.000</p>
-              <p className="">M2 en Proyectos Inmobiliarios</p>
+              <p className="text-4xl font-medium leading-none">25.000</p>
+              <p className="text-sm self-center text-center">
+                M2 en Proyectos <br /> Inmobiliarios
+              </p>
             </div>
           </div>
 

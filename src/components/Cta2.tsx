@@ -16,7 +16,7 @@ export const Cta2 = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.1 }}
-        viewport={{ once: true, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div className="w-full md:w-1/2">
           <h2 className="lg:text-[48px] text-[32px] leading-tight font-bold mb-4 md:mb-8">
@@ -49,19 +49,19 @@ export const Cta2 = () => {
         <div className="w-full md:w-1/2">
           <form className="grid grid-flow-row gap-4">
             <input
-              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white/70 placeholder:text-white/70 max-lg:text-sm font-semibold"
+              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white/80 placeholder:text-white/80 max-lg:text-sm font-semibold"
               placeholder="Nombre"
             />
             <input
-              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white/70 placeholder:text-white/70 max-lg:text-sm font-semibold"
+              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white/80 placeholder:text-white/80 max-lg:text-sm font-semibold"
               placeholder="E-mail"
             />
             <input
-              className="p-4 rounded-[30px] border-none bg-primary-200/40 text-white/70 placeholder:text-white/70 max-lg:text-sm font-semibold"
+              className="p-4 rounded-[30px] border-none bg-primary-200/40 text-white/80 placeholder:text-white/80 max-lg:text-sm font-semibold"
               placeholder="Teléfono"
             />
             <textarea
-              className="p-4 rounded-[30px] border-none bg-primary-200/40 text-white/70 placeholder:text-white/70 max-lg:text-sm font-semibold "
+              className="p-4 rounded-[30px] border-none bg-primary-200/40 text-white/80 placeholder:text-white/80 max-lg:text-sm font-semibold "
               placeholder="Mensaje"
               rows={3}
             />
