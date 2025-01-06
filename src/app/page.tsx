@@ -20,12 +20,12 @@ export default function Home() {
       {/* <AfterHero /> */}
       <Areas />
       <Clientes />
+      <Proyectos tipo="home" />
       <Services />
       {/* <Beneficios /> */}
 
       {/* <Video videoId="1U2AL8abSgg" /> */}
 
-      <Proyectos tipo="home" />
       {/* <Precios />
       <Testimonios /> */}
 

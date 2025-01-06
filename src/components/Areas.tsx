@@ -1,28 +1,42 @@
 "use client";
-import { FC } from "react";
+import { FC, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Element } from "react-scroll";
 
 export const Areas = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const displayedServices = showAll ? services : services.slice(0, 6);
+
   return (
     <Element name="acerca" className="w-full flex justify-center">
       <section className="bg-[#f3f3f3] flex flex-col w-full justify-center items-center rounded-3xl md:rounded-[4rem]">
         <div className="flex flex-col w-full lg:w-11/12 max-w-6xl py-10 lg:py-20 max-md:px-5 md:max-lg:px-12 gap-6">
           <div className="flex flex-col items-center text-black">
-            <h2 className=" lg:text-[48px]  text-[36px] leading-tight font-bold text-start w-full lg:text-center">
+            <h2 className="lg:text-[48px] text-[36px] leading-tight font-bold text-start w-full lg:text-center">
               Nuestras áreas.
             </h2>
-            <p className="lg:text-center text-gray-700 font-medium max-w-lg mt-2  ">
+            <p className="lg:text-center text-gray-700 font-medium max-w-lg mt-2">
               Soluciones integrales en montaje industrial, respaldadas por más
               de 20 años de experiencia.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 lg:gap-y-8 lg:mt-4">
-            {services.map((service, index) => (
+            {displayedServices.map((service, index) => (
               <ServiceCard key={index} {...service} />
             ))}
           </div>
+          {services.length > 6 && (
+            <div className=" mt-4 ml-4">
+              <button
+                onClick={() => setShowAll(!showAll)}
+                className=" text-black font-semibold hover:text-primary-500 transition-all duration-300  ease-linear"
+              >
+                {showAll ? "Ver menos" : "Ver más"}
+              </button>
+            </div>
+          )}
         </div>
       </section>
     </Element>
