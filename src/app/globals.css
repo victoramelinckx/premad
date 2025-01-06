@@ -8,6 +8,11 @@
   }
 }
 
+body {
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: auto;
+}
+
 .split-letter {
   position: relative;
   display: inline-block;

@@ -29,6 +29,14 @@ export const metadata: Metadata = {
   keywords:
     "plumber, Miami plumber, plumbing services, emergency plumbing, pipe repair",
   themeColor: "#000000",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    viewportFit: "cover",
+  },
+  appleWebApp: {
+    statusBarStyle: "black",
+  },
   icons: {
     icon: [
       { url: "favicons/favicon.ico" },
