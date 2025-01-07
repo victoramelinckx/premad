@@ -13,7 +13,7 @@ import { Testimonios } from "@/components/Testimonios";
 const Acerca = () => {
   return (
     <>
-      <Navbar />
+      <Navbar displayMode="no" />
       <section className="flex flex-col w-full justify-center items-center mt-16 sm:mt-20 mb-14">
         <div className="flex flex-col w-full lg:w-11/12 max-w-6xl pt-6 lg:pt-12 max-md:px-5 md:max-lg:px-12">
           <p className=" text-primary-500 font-bold text-base ">
@@ -64,7 +64,7 @@ const Acerca = () => {
             <div className="flex flex-row items-center justify-start gap-4 ml-12">
               <FaDownload className="w-6 h-6 text-primary-500" />
               <div className="flex flex-col">
-                <span className="font-semibold text-sm text-gray-900/40">
+                <span className="font-semibold text-sm text-gray-900">
                   Implementaciones
                 </span>
                 <span className="font-bold text-2xl text-gray-900">10,845</span>
@@ -73,7 +73,7 @@ const Acerca = () => {
             <div className="flex flex-row items-center justify-start gap-4 ml-12">
               <FiThumbsUp className="w-6 h-6 text-primary-500" />
               <div className="flex flex-col">
-                <span className="font-semibold text-sm text-gray-900/40">
+                <span className="font-semibold text-sm text-gray-900">
                   Clientes activos
                 </span>
                 <span className="font-bold text-2xl text-gray-900">8,493</span>
@@ -82,7 +82,7 @@ const Acerca = () => {
             <div className="flex flex-row items-center justify-start gap-4 ml-12">
               <GoPeople className="w-7 h-7 text-primary-500" />
               <div className="flex flex-col">
-                <span className="font-semibold text-sm text-gray-900/40">
+                <span className="font-semibold text-sm text-gray-900">
                   Usuarios diarios
                 </span>
                 <span className="font-bold text-2xl text-gray-900">45,432</span>

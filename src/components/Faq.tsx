@@ -1,6 +1,6 @@
 "use client";
 
-import { Link } from "react-scroll";
+import Link from "next/link";
 import { Button } from "./Button";
 import {
   Accordion,
@@ -57,9 +57,9 @@ export const Faq = () => {
                 todos nuestros servicios.{" "}
               </p>
             </div>
-            <Link className="max-lg:self-center" to="contacto" smooth>
-              <button className="mt-10 text-lg flex items-center gap-1 rounded-full bg-[#ffb400] px-5 py-3 text-black font-semibold w-fit hover:opacity-70">
-                Our services
+            <Link className="max-lg:self-center" href="/contacto">
+              <button className="mt-10 text-lg flex items-center gap-1 rounded-full bg-primary-500 px-5 py-3 text-black font-semibold w-fit hover:opacity-70">
+                Contáctenos
               </button>
             </Link>
           </div>

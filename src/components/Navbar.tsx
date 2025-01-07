@@ -1,6 +1,6 @@
 "use client";
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { Button } from "./Button";
 import { NavbarLink } from "./NavbarLink";
 import {
@@ -12,10 +12,14 @@ import {
 } from "react";
 import X from "./X";
 import Bars from "./Bars";
+import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
 
 export const Navbar = ({ displayMode }: { displayMode?: string }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
   const changeNav = () => {
     if (window.scrollY >= 96) {
@@ -26,7 +30,25 @@ export const Navbar = ({ displayMode }: { displayMode?: string }) => {
   };
 
   const toggleHome = () => {
-    scroll.scrollToTop();
+    if (pathname === "/" || pathname === "/index") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      router.push("/");
+    }
+  };
+
+  const toggleContacto = () => {
+    if (pathname === "/" || pathname === "/index") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      router.push("/contacto");
+    }
   };
 
   useEffect(() => {
@@ -106,6 +128,7 @@ const NavbarContent = ({
   isMenuOpen: boolean;
   setIsMenuOpen: Dispatch<SetStateAction<boolean>>;
 }) => {
+  const pathname = usePathname();
   return (
     <div
       className={`flex justify-between ${
@@ -131,7 +154,7 @@ const NavbarContent = ({
         >
           <NavbarLink
             key="acerca"
-            title="Acerca"
+            title="Ácerca"
             to="acerca"
             smooth
             spy
@@ -150,9 +173,9 @@ const NavbarContent = ({
             onClick={() => setIsMenuOpen(false)}
           />
           <NavbarLink
-            key="antes/despues"
+            key="proyectos"
             title="Trabajos"
-            to="antes/despues"
+            to="proyectos"
             smooth
             spy
             offset={-72}
@@ -188,16 +211,21 @@ const NavbarContent = ({
           786-6431006
         </a>
 
-        <Link
-          key="contacto"
-          to="contacto"
-          smooth
-          spy
-          offset={-72}
-          className="max-lg:hidden"
-        >
-          <Button title="Contáctenos" />
-        </Link>
+        {pathname === "/" ? (
+          <ScrollLink
+            to="contacto"
+            smooth
+            spy
+            offset={-72}
+            className="max-lg:hidden"
+          >
+            <Button title="Contáctenos" />
+          </ScrollLink>
+        ) : (
+          <Link href="/contacto" className="max-lg:hidden">
+            <Button title="Contáctenos" />
+          </Link>
+        )}
       </div>
     </div>
   );

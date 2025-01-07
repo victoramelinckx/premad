@@ -9,7 +9,7 @@ import { Cta } from "@/components/Cta";
 const Contacto = () => {
   return (
     <>
-      <Navbar />
+      <Navbar displayMode="no" />
       <section className="flex flex-col w-full justify-center items-center mt-16 sm:mt-20">
         <div className="flex flex-col w-full lg:w-11/12 max-w-6xl pt-6 lg:pt-12 max-md:px-5 md:max-lg:px-12">
           <p className=" text-primary-500 font-bold text-base ">Contáctanos</p>
@@ -19,8 +19,10 @@ const Contacto = () => {
               nuestro equipo
             </h2>
             <p className="text-sm md:text-base text-gray-900/60 font-semibold mt-2 md:w-5/12">
-              Accede a nuestro soporte especializado y obtén <br className="max-lg:hidden" />
-              respuestas a todas tus consultas sobre nuestros <br className="max-lg:hidden" />
+              Accede a nuestro soporte especializado y obtén{" "}
+              <br className="max-lg:hidden" />
+              respuestas a todas tus consultas sobre nuestros{" "}
+              <br className="max-lg:hidden" />
               servicios y soluciones.
             </p>
           </div>
@@ -66,7 +68,9 @@ const Contacto = () => {
                       <div className="p-1">
                         <BsFillQuestionCircleFill className="w-6 h-6" />
                       </div>
-                      <h3 className="md:text-[26px] text-xl text-[32px] font-bold">Consultas</h3>
+                      <h3 className="md:text-[26px] text-xl text-[32px] font-bold">
+                        Consultas
+                      </h3>
                     </div>
                     <div className="flex flex-col gap-1 font-semibold">
                       <a
@@ -90,7 +94,9 @@ const Contacto = () => {
                       <div className="p-1">
                         <MdOutlineSupportAgent className="w-6 h-6" />
                       </div>
-                      <h3 className="md:text-[26px] text-xl text-[32px] font-bold">Soporte</h3>
+                      <h3 className="md:text-[26px] text-xl text-[32px] font-bold">
+                        Soporte
+                      </h3>
                     </div>
                     <div className="flex flex-col gap-1 font-semibold">
                       <a
@@ -121,7 +127,9 @@ const Contacto = () => {
                       <div className="p-1">
                         <FaBuilding className="w-6 h-6" />
                       </div>
-                      <h3 className="md:text-[26px] text-xl text-[32px] font-bold">Oficina</h3>
+                      <h3 className="md:text-[26px] text-xl text-[32px] font-bold">
+                        Oficina
+                      </h3>
                     </div>
                     <p className="text-gray-900/60 font font-semibold">
                       2169 Street Ln. Calle,
@@ -140,7 +148,7 @@ const Contacto = () => {
       <Faq />
       <Cta />
       <Footer />
-    </ >
+    </>
   );
 };
 export default Contacto;
