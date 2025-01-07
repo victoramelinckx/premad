@@ -45,7 +45,7 @@ const faqData = [
 export const Faq = () => {
   return (
     <section className="flex flex-col w-full justify-center items-center">
-      <div className="flex flex-col w-full lg:w-11/12 max-w-6xl pt-10  pb-10 max-md:px-5 md:max-lg:px-12 gap-6">
+      <div className="flex flex-col w-full lg:w-11/12 max-w-6xl lg:py-10 max-md:px-5 md:max-lg:px-12 gap-6">
         <section className="flex flex-col lg:flex-row justify-center lg:items-stretch items-center py-10 max-h-max-[700px] gap-8 lg:gap-12 max-w-6xl">
           <div className="w-full lg:w-1/2 h-full flex flex-col lg:sticky lg:top-24">
             <div className="">
