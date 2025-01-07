@@ -240,7 +240,7 @@ const data: CarouselDataType[] = [
   {
     Image: "/imagenes/imagen1.jpeg",
     nombre: "Tratamiento de efluentes.",
-    tratamiento: "Concepción.",
+    tratamiento: "Agg texto.",
     tipo: "servicio",
   },
   {
@@ -264,7 +264,7 @@ const data: CarouselDataType[] = [
   {
     Image: "/imagenes/imagen5.jpg",
     nombre: "Diseño de estanques y recipientes a presión",
-    tratamiento: "Concepción.",
+    tratamiento: "Agg texto.",
     tipo: "servicio",
   },
 ];
