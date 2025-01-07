@@ -85,8 +85,8 @@ export const Testimonios = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="text-black" />
-            <CarouselNext className="text-black" />
+            <CarouselPrevious className="text-black bg-black" />
+            <CarouselNext className="text-black bg-black" />
           </Carousel>
         </div>
       </div>

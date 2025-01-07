@@ -1,6 +1,6 @@
 "use client";
+import Link from "next/link";
 import { Button } from "./Button";
-import { Link } from "react-scroll";
 
 export const Cta = () => {
   return (
@@ -11,7 +11,7 @@ export const Cta = () => {
           <br />
           Conversemos hoy mismo.
         </h2>
-        <Link to="contacto" smooth>
+        <Link href={"/contacto"}>
           <Button
             title="Contáctanos ahora"
             className="px-5 py-3 text-black bg-white rounded-full font-semibold lg:font-bold"
