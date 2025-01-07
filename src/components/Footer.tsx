@@ -50,7 +50,7 @@ const Footer = () => {
               />
             </a>
             <p className="text-[#1C1C1C99] font-semibold mb-8">
-              Optimiza la gestión de tu empresa con nuestras soluciones .
+              Ingeneria en construcción.
             </p>
             {/* <div className="space-y-4">
               <h3 className="text-xl font-semibold">Join our mailing list</h3>
