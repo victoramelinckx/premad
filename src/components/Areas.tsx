@@ -29,10 +29,10 @@ export const Areas = () => {
             ))}
           </div>
           {services.length > 6 && (
-            <div className=" mt-2 ml-4">
+            <div className=" ml-4">
               <button
                 onClick={() => setShowAll(!showAll)}
-                className=" text-black font-semibold hover:text-primary-500 transition-all duration-300  ease-linear"
+                className=" text-black text-lg font-semibold hover:text-primary-500 transition-all duration-300  ease-linear"
               >
                 {showAll ? "Ver menos" : "Ver más"}
               </button>

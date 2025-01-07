@@ -27,10 +27,10 @@ export const Servicios = () => {
           ))}
         </div>
         {serviciosLista.length > 4 && (
-          <div className=" mt-2 ml-4">
+          <div className=" ml-4">
             <button
               onClick={() => setShowAll(!showAll)}
-              className=" text-white font-semibold hover:text-primary-500 transition-all duration-300  ease-linear"
+              className=" text-white text-lg font-semibold hover:text-primary-500 transition-all duration-300  ease-linear"
             >
               {showAll ? "Ver menos" : "Ver más"}
             </button>
