@@ -45,15 +45,18 @@ export const Proyectos = ({ tipo }: ProyectosProps) => {
               tipo != "home" ? "text-black" : "text-white"
             }`}
           >
-            Proyectos que construyen el futuro.
+            {tipo === "servicio"
+              ? "Nuestros servicios en acción."
+              : "Proyectos que construyen el futuro."}
           </h3>
           <p
             className={`font-medium mt-4 ${
               tipo != "home" ? "text-black" : "text-white"
             }`}
           >
-            Un vistazo a algunos de nuestros proyectos destacados, construidos
-            con precisión y dedicación.
+            {tipo === "servicio"
+              ? "Experiencia comprobada a través de servicios de ingeniería y consultoría que impulsan el éxito de nuestros clientes."
+              : "Un vistazo a algunos de nuestros proyectos destacados, construidos con precisión y dedicación."}
           </p>
         </div>
         <div className="w-full max-md:px-4 max-w-7xl overflow-visible relative">
@@ -236,32 +239,32 @@ const data: CarouselDataType[] = [
   },
   {
     Image: "/imagenes/imagen1.jpeg",
-    nombre: "Condominio Bosque Valle",
-    tratamiento: "300 días - 24.500 m² - 3.500 UF.",
+    nombre: "Tratamiento de efluentes.",
+    tratamiento: "Concepción.",
     tipo: "servicio",
   },
   {
     Image: "/imagenes/Imagen2.jpg",
-    nombre: "Condominio Bosque Valle",
-    tratamiento: "300 días - 24.500 m² - 3.500 UF.",
+    nombre: "Compresión y transporte de GLP, GNL",
+    tratamiento: "Gasoductos, gas natural, shael gas, fuel gas.",
     tipo: "servicio",
   },
   {
     Image: "/imagenes/Imagen3.jpg",
-    nombre: "Condominio Bosque Valle",
-    tratamiento: "300 días - 24.500 m² - 3.500 UF.",
+    nombre: "Hidráulica y sistemas de bombeo",
+    tratamiento: "Analisis de redes hidráulicas.",
     tipo: "servicio",
   },
   {
     Image: "/imagenes/Imagen4.jpg",
-    nombre: "Condominio Bosque Valle",
-    tratamiento: "300 días - 24.500 m² - 3.500 UF.",
+    nombre: "Levantamiento de terreno",
+    tratamiento: "Levantamiento de piping en terreno, P&ID, Isométricos.",
     tipo: "servicio",
   },
   {
-    Image: "/imagenes/imagen5.webp",
-    nombre: "Condominio Bosque Valle",
-    tratamiento: "300 días - 24.500 m² - 3.500 UF.",
+    Image: "/imagenes/imagen5.jpg",
+    nombre: "Diseño de estanques y recipientes a presión",
+    tratamiento: "Concepción.",
     tipo: "servicio",
   },
 ];
