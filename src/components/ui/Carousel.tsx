@@ -217,7 +217,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <IoIosArrowDropleftCircle className="h-20 w-20 text-black" />
+      <IoIosArrowDropleftCircle className="h-20 w-20 text-white" />
       <span className="sr-only">Previous slide</span>
     </Button>
   );
@@ -246,7 +246,7 @@ const CarouselNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <IoIosArrowDroprightCircle className="h-20 w-20 text-black" />
+      <IoIosArrowDroprightCircle className="h-20 w-20 text-white" />
       <span className="sr-only">Next slide</span>
     </Button>
   );
