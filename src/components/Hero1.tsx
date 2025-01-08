@@ -30,7 +30,7 @@ export const Hero1 = () => {
             Innovación y experiencia <br className="2xl:flex hidden" /> en
             montaje industrial.
           </h1>
-          <p className="max-md:mt-4 md:leading-normal max-lg:text-center self-center tracking-[.03em] max-sm:font-medium font-[450]  max-w-lg mt-2 text-white/90 sm:max-lg:w-4/5">
+          <p className="max-md:mt-4 md:leading-normal max-lg:text-center max-lg:self-center tracking-[.03em] max-sm:font-medium font-[450]  max-w-lg mt-2 text-white/90 sm:max-lg:w-4/5">
             Más de 20 años transformando la construcción con soluciones
             innovadoras de alta eficiencia para proyectos a gran escala.
           </p>
