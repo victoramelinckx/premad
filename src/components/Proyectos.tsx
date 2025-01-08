@@ -25,7 +25,9 @@ type ProyectosProps = {
 
 export const Proyectos = ({ tipo }: ProyectosProps) => {
   const filterProjects = () => {
-    if (tipo === "home") return data;
+    if (tipo === "home") {
+      return data.filter((item) => item.tipo !== "servicio");
+    }
     return data.filter((item) => item.tipo === tipo);
   };
 
