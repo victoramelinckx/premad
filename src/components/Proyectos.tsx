@@ -78,32 +78,32 @@ export const Proyectos = ({ tipo }: ProyectosProps) => {
                   key={item.tratamiento}
                   className="md:pl-4 basis-1 md:basis-[450px] min-w-[350px]"
                 >
-                  <Link href="/proyecto">
-                    <div
-                      className="relative h-[450px] rounded-2xl overflow-hidden bg-black/5 
+                  {/* <Link href="/proyecto"> */}
+                  <div
+                    className="relative h-[450px] rounded-2xl overflow-hidden bg-black/5 
                     group"
-                    >
-                      <Image
-                        src={item.Image}
-                        alt={`Antes ${item.tratamiento}`}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 350px"
-                      />
-                    </div>
-                    <div
-                      className={`mt-4 flex flex-col ${
-                        tipo != "home" ? "text-black" : "text-white"
-                      }`}
-                    >
-                      <p className="text-xl font-semibold transform transition-all duration-300 group-hover:translate-y-[-4px]">
-                        {item.nombre}
-                      </p>
-                      <p className="text-base mt-2 font-normal transform transition-all duration-300 group-hover:translate-y-[-4px]">
-                        {item.tratamiento}
-                      </p>
-                    </div>
-                  </Link>
+                  >
+                    <Image
+                      src={item.Image}
+                      alt={`Antes ${item.tratamiento}`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 350px"
+                    />
+                  </div>
+                  <div
+                    className={`mt-4 flex flex-col ${
+                      tipo != "home" ? "text-black" : "text-white"
+                    }`}
+                  >
+                    <p className="text-xl font-semibold transform transition-all duration-300 group-hover:translate-y-[-4px]">
+                      {item.nombre}
+                    </p>
+                    <p className="text-base mt-2 font-normal transform transition-all duration-300 group-hover:translate-y-[-4px]">
+                      {item.tratamiento}
+                    </p>
+                  </div>
+                  {/* </Link> */}
                 </CarouselItem>
               ))}
             </CarouselContent>

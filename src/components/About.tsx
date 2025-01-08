@@ -17,8 +17,10 @@ export const About = () => {
                 ¿Quiénes somos?
               </h3>
               <p className="pt-5 text-gray-700 leading-normal font-medium">
-                Expertos en construcción industrializada y modular en Chile con
-                más de 20 años de trayectoria.
+                Es una empresa de servicios con más de 20 años de experiencia
+                orientada en satisfacer las necesidades de nuestros clientes en
+                las áreas de ingeniería, consultoría, construcción, montaje y
+                retail.
                 <br />
                 <br />
                 Desarrollamos cada proyecto en estrecha colaboración con
