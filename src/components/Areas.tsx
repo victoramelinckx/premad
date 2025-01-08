@@ -18,7 +18,7 @@ export const Areas = () => {
             <h2 className="lg:text-[48px] text-[36px] leading-tight font-bold text-start w-full lg:text-center">
               Nuestras áreas.
             </h2>
-            <p className="lg:text-center text-gray-700 font-medium max-w-lg mt-2">
+            <p className="lg:text-center self-start lg:self-center text-gray-700 font-medium max-w-lg mt-2">
               Soluciones integrales en montaje industrial, respaldadas por más
               de 20 años de experiencia.
             </p>

@@ -10,18 +10,18 @@ export const Servicios = () => {
     ? serviciosLista
     : serviciosLista.slice(0, 4);
   return (
-    <section className="bg-[#1D2024] flex flex-col w-full justify-center items-center">
+    <section className="bg-[#1D2024] flex flex-col w-full justify-center items-center min-h-0">
       <div className="flex flex-col w-full lg:w-11/12 max-w-5xl py-10 lg:py-20 max-md:px-5 md:max-lg:px-12 gap-6">
         <div className="flex flex-col items-center text-white">
           <h2 className=" lg:text-[48px]  text-[36px] leading-tight font-bold text-start w-full lg:text-center">
             Nuestros servicios.
           </h2>
-          <p className="lg:text-center text-white font-medium max-w-lg mt-2  ">
+          <p className="lg:text-center self-start lg:self-center text-white font-medium max-w-lg mt-2  ">
             Servicios de ingeniería especializados con soluciones técnicas
             innovadoras y eficientes para proyectos industriales.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-y-6 lg:gap-y-8 lg:mt-4">
+        <div className="grid grid-cols-1 gap-6 lg:gap-8 lg:mt-4 w-full">
           {displayedServices.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}
@@ -50,16 +50,17 @@ interface ServiceCardProps {
 interface Service extends ServiceCardProps {}
 
 const ServiceCard: FC<ServiceCardProps> = ({ icon, title, description }) => (
-  <div className=" w-full h-full flex flex-col lg:flex-row border bg-[#292d314f]  border-gray-200/50 p-8 lg:px-16 lg:py-10 rounded-lg overflow-hidden max-lg:space-y-6 lg:space-x-8 text-white">
-    {/* Background Image Container */}
-    <img
-      src={icon}
-      alt={`${title} icon`}
-      className="w-16 h-16 lg:w-20 lg:h-20 z-10 "
-    />
-    <div className="flex flex-col w-full justify-start gap-4">
-      <h3 className="z-10 font-semibold text-3xl text-start">{title}</h3>
-      <p className="z-10 text-base max-w-2xl">{description}</p>
+  <div className="w-full flex flex-col lg:flex-row border bg-[#292d314f] border-gray-200/50 rounded-lg text-white">
+    <div className="flex flex-col lg:flex-row w-full p-8 lg:px-16 lg:py-10 gap-6 lg:gap-8">
+      <img
+        src={icon}
+        alt={`${title} icon`}
+        className="w-16 h-16 lg:w-20 lg:h-20 flex-shrink-0"
+      />
+      <div className="flex flex-col gap-4">
+        <h3 className="font-semibold text-3xl">{title}</h3>
+        <p className="text-base lg:max-w-2xl">{description}</p>
+      </div>
     </div>
   </div>
 );
