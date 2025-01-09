@@ -141,9 +141,9 @@ const NavbarContent = ({
           onClick={toggleHome}
         >
           <img
-            src="/premad_logo.png"
+            src="/carposylagos_.png"
             className={`${
-              isScrollNav ? "w-20" : "w-28 lg:w-36 "
+              isScrollNav ? "w-44" : "w-40 lg:w-56 "
             } transition-all duration-700`}
             alt="Plumbing Solutions in Miami. Jdenx Solutions."
           />
