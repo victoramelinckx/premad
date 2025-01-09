@@ -141,7 +141,7 @@ const NavbarContent = ({
           onClick={toggleHome}
         >
           <img
-            src="/carposylagos_.png"
+            src="/carposylagoss.png"
             className={`${
               isScrollNav ? "w-44" : "w-40 lg:w-56 "
             } transition-all duration-700 h-auto`}
