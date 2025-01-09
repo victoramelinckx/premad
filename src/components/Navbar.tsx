@@ -145,7 +145,7 @@ const NavbarContent = ({
             className={`${
               isScrollNav ? "w-44" : "w-40 lg:w-56 "
             } transition-all duration-700`}
-            alt="Plumbing Solutions in Miami. Jdenx Solutions."
+            alt="Carpos y Lagos Constructora."
           />
         </button>
         <ul
