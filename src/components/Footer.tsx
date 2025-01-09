@@ -44,9 +44,9 @@ const Footer = () => {
           <div className="mb-12 md:mb-0 md:max-w-sm">
             <a href="/" className="inline-block mb-6">
               <img
-                src="/premad_logo.png"
+                src="/carposylagos_negro.png"
                 alt="Logo Opencode"
-                className="h-20 w-auto"
+                className="h-16 w-auto"
               />
             </a>
             <p className="text-[#1C1C1C99] font-semibold mb-8">
