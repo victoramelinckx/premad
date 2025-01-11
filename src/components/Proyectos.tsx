@@ -36,7 +36,7 @@ export const Proyectos = ({ tipo }: ProyectosProps) => {
   return (
     <Element
       name="proyectos"
-      className={`w-full overflow-hidden  pb-8 ${
+      className={`w-full overflow-hidden  ${
         tipo != "home" ? "bg-white" : "bg-[#0a0d14]"
       }`}
     >
