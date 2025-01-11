@@ -77,7 +77,8 @@ const services = [
   {
     icon: "/icons/obras_civiles.svg",
     title: "Obras civiles",
-    description: "Montaje y construcción para proyectos de infraestructura.",
+    description:
+      "Montaje y construcción para proyectos de infraestructura industrial y comercial",
   },
   {
     icon: "/icons/inmobiliaria.svg",

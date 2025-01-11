@@ -13,9 +13,12 @@ export const Cta2 = () => {
     >
       <motion.div
         className="flex flex-col md:flex-row p-10 lg:p-16 rounded-[30px] shadow bg-primary-500 max-w-6xl w-full"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.1 }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.8,
+          ease: "easeOut",
+        }}
         viewport={{ once: true, amount: 0.2 }}
       >
         <div className="w-full md:w-1/2">

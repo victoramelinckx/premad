@@ -1,18 +1,119 @@
 "use client";
 
-import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { motion, useSpring, useTransform, useInView } from "motion/react";
 import Image from "next/image";
-import { Badget } from "./Badget";
-import { Badget2 } from "./Badget2";
 import { Link } from "react-scroll";
 import { Button } from "./Button";
+import { FC, useRef, useEffect } from "react";
 
-export const Hero1 = () => {
+interface StatProps {
+  number: string;
+  description: string;
+  index: number;
+}
+
+const Stat: FC<StatProps> = ({ number, description, index }) => (
+  <motion.div
+    className="flex flex-col"
+    initial={{ opacity: 0, x: 20 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{
+      duration: 0.5,
+      ease: "easeOut",
+      delay: 0.2 * index, // Creates cascade effect
+    }}
+    viewport={{ once: true, amount: 0.2 }}
+  >
+    <p className="text-[78px] font-medium leading-none mb-2">{number}</p>
+    <p className="tracking-[.03em] max-sm:font-medium font-[450] text-white/90 text-[16px]">
+      {description}
+    </p>
+  </motion.div>
+);
+
+const AnimatedCounter: FC<{ value: number; duration: number }> = ({
+  value,
+  duration,
+}) => {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref);
+  const spring = useSpring(0, {
+    duration,
+    bounce: 0,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      spring.set(value);
+    }
+  }, [spring, value, inView]);
+
   return (
-    <section className="flex flex-col relative w-full justify-center items-center ">
+    <motion.span ref={ref}>
+      {useTransform(spring, (latest) => Math.floor(latest).toLocaleString())}
+    </motion.span>
+  );
+};
+
+const extractNumber = (str: string): number => {
+  return parseInt(str.replace(/\D/g, ""));
+};
+
+interface MobileStatProps {
+  number: string;
+  description: string;
+  index: number;
+  className?: string;
+}
+
+const MobileStat: FC<MobileStatProps> = ({
+  number,
+  description,
+  index,
+  className = "",
+}) => (
+  <motion.div
+    className={`flex flex-col items-center justify-center ${className}`}
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{
+      duration: 0.5,
+      ease: "easeOut",
+      delay: 0.2 * index,
+    }}
+    viewport={{ once: true, amount: 0.2 }}
+  >
+    <p className="text-4xl font-medium leading-none">
+      <AnimatedCounter value={extractNumber(number)} duration={2} />
+      {number.includes("+") && "+"}
+    </p>
+    <p className="text-sm self-center text-center whitespace-pre-line">
+      {description}
+    </p>
+  </motion.div>
+);
+
+export const Hero1: FC = () => {
+  const stats = [
+    {
+      number: "10.000+",
+      description: "Horas en Proyectos de Ingenería",
+    },
+    {
+      number: "52.000",
+      description: "M2 en Obras Civiles",
+    },
+    {
+      number: "25.000",
+      description: "M2 en Proyectos Inmobiliarios",
+    },
+  ];
+
+  return (
+    <section className="flex flex-col relative w-full justify-center items-center">
       {/* Background Image Container */}
       <div className="absolute inset-0 w-full h-full z-0">
-        <div className="absolute inset-0 bg-black/55 z-[1]" /> {/* Overlay */}
+        <div className="absolute inset-0 bg-black/55 z-[1]" />
         <Image
           src="/fondo1.jpg"
           alt="Construction background"
@@ -23,103 +124,98 @@ export const Hero1 = () => {
         />
       </div>
 
-      {/* Content Container - Note the z-10 to place it above the background */}
-      <div className="relative z-10 flex max-lg:flex-col max-lg:pt-36 lg:py-[130px]  w-full lg:w-11/12 max-w-6xl gap-14 lg:gap-6 lg:justify-between">
+      {/* Content Container */}
+      <div className="relative z-10 flex max-lg:flex-col max-lg:pt-36 lg:py-[130px] w-full lg:w-11/12 max-w-6xl gap-14 lg:gap-6 lg:justify-between">
         <div className="flex flex-col justify-center text-white md:max-lg:items-center gap-3 sm:gap-6 lg:gap-4 max-w-4xl md:max-lg:text-center max-lg:px-6 lg:mr-10">
-          <h1 className="leading-[40px] tracking-[.01em] font-dmsans max-md:text-center font-extrabold text-[40px] md:text-5xl md:leading-[48px] lg:text-6xl lg:leading-[64px] ">
+          <motion.h1
+            className="leading-[40px] tracking-[.01em] font-dmsans max-md:text-center font-extrabold text-[40px] md:text-5xl md:leading-[48px] lg:text-6xl lg:leading-[64px]"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.6,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
             Innovación y experiencia en obras civiles y construcción.
-          </h1>
-          <p className="max-md:mt-4 md:leading-normal max-lg:text-center max-lg:self-center tracking-[.03em] max-sm:font-medium font-[450]  max-w-lg mt-2 text-white/90 sm:max-lg:w-4/5">
+          </motion.h1>
+
+          <motion.p
+            className="max-md:mt-4 md:leading-normal max-lg:text-center max-lg:self-center tracking-[.03em] max-sm:font-medium font-[450] max-w-lg mt-2 text-white/90 sm:max-lg:w-4/5"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.6,
+              ease: "easeOut",
+              delay: 0.2,
+            }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
             Más de 20 años transformando la construcción con soluciones
             innovadoras de alta eficiencia para proyectos a gran escala
             industriales y edificación.
-          </p>
-          <div className="flex flex-col lg:flex-row max-md:items-center md:space-x-6 mt-4">
-            {/* <button className="mt-3 text-lg flex items-center gap-1 rounded-full bg-primary-500 px-6 py-3 max-md:w-2/3 max-md:justify-center max-md:text-center text-black font-semibold w-fit hover:opacity-70">
-              Nuestros servicios
-            </button> */}
-            {/* <button className="mt-3 text-lg flex items-center gap-1 rounded-full bg-white/30 blur-xs border-solid max-md:w-2/3 max-md:justify-center max-md:text-center border-2 px-6 py-3 text-white border-white font-semibold w-fit hover:opacity-70">
-              Contáctenos
-            </button> */}
-            <Link
-              key="servicios"
-              to="servicios"
-              smooth
-              spy
-              offset={-72}
-              className=""
-            >
+          </motion.p>
+
+          <motion.div
+            className="flex flex-col lg:flex-row max-md:items-center md:space-x-6 mt-4"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.6,
+              ease: "easeOut",
+              delay: 0.4,
+            }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <Link to="servicios" smooth spy offset={-72}>
               <Button
                 title="Nuestras áreas"
-                className="mt-3  bg-primary-500 px-6 py-3  text-black font-semibold w-fit hover:opacity-70"
+                className="mt-3 bg-primary-500 px-6 py-3 text-black font-semibold w-fit hover:opacity-70"
               />
             </Link>
-            <Link
-              key="contacto"
-              to="contacto"
-              smooth
-              spy
-              offset={-72}
-              className=""
-            >
+            <Link to="contacto" smooth spy offset={-72}>
               <Button
                 title="Contáctenos"
-                className="mt-3  bg-white/30 blur-xs border-solid  border-2 px-6 py-3 text-white border-white font-semibold w-fit hover:opacity-70"
+                className="mt-3 bg-white/30 blur-xs border-solid border-2 px-6 py-3 text-white border-white font-semibold w-fit hover:opacity-70"
               />
             </Link>
-          </div>
+          </motion.div>
         </div>
+
         <div className="flex flex-col text-white items-start justify-center space-y-4 pb-14 lg:py-20">
-          {/* Container for mobile layout */}
+          {/* Mobile Stats */}
           <div className="w-full flex flex-col lg:hidden">
             <div className="flex flex-row justify-around w-full mb-6">
-              <div className="flex flex-col items-center justify-center">
-                <p className="text-4xl font-medium leading-none">10.000+</p>
-                <p className=" text-sm self-center text-center">
-                  Horas en Proyectos <br /> de Ingenería
-                </p>
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <p className="text-4xl font-medium leading-none">52.000</p>
-                <p className="text-sm self-center text-center">
-                  M2 en Obras <br /> Civiles
-                </p>
-              </div>
+              <MobileStat
+                number={stats[0].number}
+                description={stats[0].description}
+                index={0}
+              />
+              <MobileStat
+                number={stats[1].number}
+                description={stats[1].description}
+                index={1}
+              />
             </div>
             <div className="flex flex-col items-center w-full">
-              <p className="text-4xl font-medium leading-none">25.000</p>
-              <p className="text-sm self-center text-center">
-                M2 en Proyectos <br /> Inmobiliarios
-              </p>
+              <MobileStat
+                number={stats[2].number}
+                description={stats[2].description}
+                index={2}
+              />
             </div>
           </div>
 
-          {/* Desktop layout */}
+          {/* Desktop Stats */}
           <div className="hidden lg:flex lg:flex-col space-y-12">
-            <div className="flex flex-col">
-              <p className="text-[78px] font-medium leading-none mb-2">
-                10.000+
-              </p>
-              <p className="tracking-[.03em] max-sm:font-medium font-[450] text-white/90 text-[16px]">
-                Horas en Proyectos de Ingenería
-              </p>
-            </div>
-            <div className="flex flex-col">
-              <p className="text-[78px] font-medium leading-none mb-2">
-                52.000
-              </p>
-              <p className="tracking-[.03em] max-sm:font-medium font-[450] text-white/90 text-[16px]">
-                M2 en Obras Civiles
-              </p>
-            </div>
-            <div className="flex flex-col">
-              <p className="text-[78px] font-medium leading-none mb-2">
-                25.000
-              </p>
-              <p className="tracking-[.03em] max-sm:font-medium font-[450] text-white/90 text-[16px]">
-                M2 en Proyectos Inmobiliarios
-              </p>
-            </div>
+            {stats.map((stat, index) => (
+              <Stat
+                key={stat.number}
+                number={stat.number}
+                description={stat.description}
+                index={index}
+              />
+            ))}
           </div>
         </div>
       </div>

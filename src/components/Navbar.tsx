@@ -143,7 +143,7 @@ const NavbarContent = ({
           <img
             src="/carposylagoss.png"
             className={`${
-              isScrollNav ? "w-44" : "w-44 lg:w-60 "
+              isScrollNav ? "w-48" : "w-44 lg:w-64 "
             } transition-all duration-700 h-auto`}
             alt="Carpos y Lagos Constructora."
           />
