@@ -12,7 +12,7 @@ export const Hero1 = () => {
     <section className="flex flex-col relative w-full justify-center items-center ">
       {/* Background Image Container */}
       <div className="absolute inset-0 w-full h-full z-0">
-        <div className="absolute inset-0 bg-black/70 z-[1]" /> {/* Overlay */}
+        <div className="absolute inset-0 bg-black/55 z-[1]" /> {/* Overlay */}
         <Image
           src="/fondo1.jpg"
           alt="Construction background"
@@ -27,12 +27,12 @@ export const Hero1 = () => {
       <div className="relative z-10 flex max-lg:flex-col max-lg:pt-36 lg:py-[130px]  w-full lg:w-11/12 max-w-6xl gap-14 lg:gap-6 lg:justify-between">
         <div className="flex flex-col justify-center text-white md:max-lg:items-center gap-3 sm:gap-6 lg:gap-4 max-w-4xl md:max-lg:text-center max-lg:px-6 lg:mr-10">
           <h1 className="leading-[40px] tracking-[.01em] font-dmsans max-md:text-center font-extrabold text-[40px] md:text-5xl md:leading-[48px] lg:text-6xl lg:leading-[64px] ">
-            Innovación y experiencia <br className="2xl:flex hidden" /> en
-            montaje industrial.
+            Innovación y experiencia en obras civiles y construcción.
           </h1>
           <p className="max-md:mt-4 md:leading-normal max-lg:text-center max-lg:self-center tracking-[.03em] max-sm:font-medium font-[450]  max-w-lg mt-2 text-white/90 sm:max-lg:w-4/5">
             Más de 20 años transformando la construcción con soluciones
-            innovadoras de alta eficiencia para proyectos a gran escala.
+            innovadoras de alta eficiencia para proyectos a gran escala
+            industriales y edificación.
           </p>
           <div className="flex flex-col lg:flex-row max-md:items-center md:space-x-6 mt-4">
             {/* <button className="mt-3 text-lg flex items-center gap-1 rounded-full bg-primary-500 px-6 py-3 max-md:w-2/3 max-md:justify-center max-md:text-center text-black font-semibold w-fit hover:opacity-70">

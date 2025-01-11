@@ -143,7 +143,7 @@ const NavbarContent = ({
           <img
             src="/carposylagoss.png"
             className={`${
-              isScrollNav ? "w-44" : "w-40 lg:w-56 "
+              isScrollNav ? "w-44" : "w-44 lg:w-60 "
             } transition-all duration-700 h-auto`}
             alt="Carpos y Lagos Constructora."
           />
@@ -208,7 +208,7 @@ const NavbarContent = ({
           href="https://api.whatsapp.com/send/?phone=7866431006&text=Hi%20I%20would%20like%20to%20get%20a%20quote%F0%9F%98%83"
         >
           <img src="icons/phonewhite.svg" className="w-5 mr-1" />
-          786-6431006
+          +56 41 3213140
         </a>
 
         {pathname === "/" ? (

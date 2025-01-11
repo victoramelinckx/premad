@@ -89,11 +89,11 @@ const services = [
     icon: "/icons/industrial.svg",
     title: "Proyectos industriales",
     description:
-      "Infraestructura para sectores industriales de alta complejidad.",
+      "Proyectos epc, ingenieria y construcción para sectores industriales de alta complejidad.",
   },
   {
     icon: "/icons/retail.svg",
-    title: "Construcción para retail",
+    title: "Construcción industrializada y modular",
     description: "Montaje de espacios funcionales para comercio.",
   },
   {
