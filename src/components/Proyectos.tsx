@@ -41,7 +41,7 @@ export const Proyectos = ({ tipo }: ProyectosProps) => {
       }`}
     >
       <section className="flex flex-col py-10 lg:py-20 justify-center items-center">
-        <div className="flex flex-col w-full mb-10 max-w-6xl px-4">
+        <div className="flex flex-col w-full mb-6 max-w-6xl px-4">
           <h3
             className={`lg:text-[48px] md:text-[36px] text-[32px] leading-tight font-bold ${
               tipo != "home" ? "text-black" : "text-white"
