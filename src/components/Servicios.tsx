@@ -21,7 +21,7 @@ export const Servicios = () => {
             innovadoras y eficientes para proyectos industriales.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-6 lg:gap-8 lg:mt-4 w-full">
+        <div className="grid grid-cols-1 gap-6 lg:mt-4 w-full">
           {displayedServices.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}
