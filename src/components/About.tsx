@@ -4,6 +4,7 @@ import Acercade from "../../public/imagenes/premad_acerca.png";
 import Image from "next/image";
 import { Element, Link } from "react-scroll";
 import { Button } from "./Button";
+import { motion } from "motion/react";
 
 export const About = () => {
   return (
@@ -12,7 +13,15 @@ export const About = () => {
         <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
           {/* Contenedor del texto - Ahora con flex y centrado vertical */}
           <div className="w-full lg:w-[45%] flex flex-col justify-center">
-            <div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.6,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
               <h3 className="lg:text-[48px]  text-[36px] leading-tight font-bold">
                 ¿Quiénes somos?
               </h3>
@@ -58,11 +67,20 @@ export const About = () => {
                   className="mt-3  bg-white/30 blur-xs border-solid  border-2 px-6 py-3 text-white border-white font-semibold w-fit hover:opacity-70"
                 />
               </Link> */}
-            </div>
+            </motion.div>
           </div>
 
           {/* Contenedor de la imagen - Altura automática */}
-          <div className="w-full lg:w-[55%]">
+          <motion.div
+            className="w-full lg:w-[55%]"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.6,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
             <Image
               src={Acercade}
               alt="About us image"
@@ -70,7 +88,7 @@ export const About = () => {
               priority
               placeholder="blur"
             />
-          </div>
+          </motion.div>
         </section>
       </div>
     </Element>

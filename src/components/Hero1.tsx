@@ -1,10 +1,10 @@
 "use client";
 
-import { motion, useSpring, useTransform, useInView } from "motion/react";
+import { motion } from "motion/react";
 import Image from "next/image";
 import { Link } from "react-scroll";
 import { Button } from "./Button";
-import { FC, useRef, useEffect } from "react";
+import { FC } from "react";
 
 interface StatProps {
   number: string;
@@ -31,34 +31,6 @@ const Stat: FC<StatProps> = ({ number, description, index }) => (
   </motion.div>
 );
 
-const AnimatedCounter: FC<{ value: number; duration: number }> = ({
-  value,
-  duration,
-}) => {
-  const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref);
-  const spring = useSpring(0, {
-    duration,
-    bounce: 0,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      spring.set(value);
-    }
-  }, [spring, value, inView]);
-
-  return (
-    <motion.span ref={ref}>
-      {useTransform(spring, (latest) => Math.floor(latest).toLocaleString())}
-    </motion.span>
-  );
-};
-
-const extractNumber = (str: string): number => {
-  return parseInt(str.replace(/\D/g, ""));
-};
-
 interface MobileStatProps {
   number: string;
   description: string;
@@ -83,10 +55,7 @@ const MobileStat: FC<MobileStatProps> = ({
     }}
     viewport={{ once: true, amount: 0.2 }}
   >
-    <p className="text-4xl font-medium leading-none">
-      <AnimatedCounter value={extractNumber(number)} duration={2} />
-      {number.includes("+") && "+"}
-    </p>
+    <p className="text-4xl font-medium leading-none">{number}</p>
     <p className="text-sm self-center text-center whitespace-pre-line">
       {description}
     </p>
