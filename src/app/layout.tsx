@@ -23,11 +23,10 @@ const monserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Opencode | Soluciones de Software.",
-  description:
-    "Professional plumbing services in Miami. 24/7 emergency repairs, installations, and maintenance.",
+  title: "Carpos & Lagos | Ingenería en construcción.",
+  description: "Ingenería en construcción.",
   keywords:
-    "plumber, Miami plumber, plumbing services, emergency plumbing, pipe repair",
+    "constructora, ingeneria, ingeneria en concepcion, ingeneria en construccion, ",
   themeColor: "#000000",
   viewport: {
     width: "device-width",
@@ -51,11 +50,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Opencode | Soluciones de Software.",
-    description:
-      "Professional plumbing services in Miami. 24/7 emergency repairs, installations, and maintenance.",
+    title: "Carpos & Lagos | Ingenería en construcción.",
+    description: "Ingenería en construcción.",
     url: "https://www.opencode.cl",
-    siteName: "Jdenx Solutions",
+    siteName: "Carpos & Lagos Constructora",
     images: [
       {
         url: "https://www.opencode.cl/opencode/openLogo",
