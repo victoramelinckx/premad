@@ -9,6 +9,9 @@ import { GoPeople } from "react-icons/go";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
 import { Testimonios } from "@/components/Testimonios";
+import { IoTimeSharp } from "react-icons/io5";
+import { FaMapSigns } from "react-icons/fa";
+import { FaHammer } from "react-icons/fa";
 
 const Acerca = () => {
   return (
@@ -25,73 +28,77 @@ const Acerca = () => {
             </h2>
 
             <p className="text-sm md:text-base text-gray-900/60 font-semibold mt-2 lg:w-1/2">
-              En OpenCode nos especializamos en crear soluciones tecnológicas
-              que potencian el crecimiento de las empresas chilenas. Con más de
-              15 años en el mercado, hemos ayudado a miles de empresas a
-              optimizar sus procesos y alcanzar sus objetivos de negocio.
+              Carpos & Lagos es una empresa de servicios con más de 20 años de
+              experiencia orientada en satisfacer las necesidades de nuestros
+              clientes en las áreas de ingeniería, consultoría, construcción,
+              montaje y retail.
               <br />
               <br />
-              Muchas empresas aún dependen de software obsoleto que no se adapta
-              a las necesidades actuales de velocidad, escalabilidad y gestión
-              de datos. En OpenCode, nos dedicamos a revolucionar la gestión
-              empresarial con un enfoque completamente nuevo y adaptado a la
-              realidad local.
+              Desarrollamos cada proyecto en estrecha colaboración con nuestros
+              clientes, respaldados por un equipo de élite en ingeniería,
+              arquitectura, consultoría y construcción.
               <br />
               <br />
-              Nuestras soluciones están construidas con tecnología de última
-              generación, son totalmente personalizables y diseñadas para una
-              integración perfecta con tu negocio. Con OpenCode, las empresas
-              pueden implementar y adaptar el software exactamente según sus
-              necesidades específicas.
+              Nuestra metodología integrada garantiza resultados excepcionales
+              desde el diseño hasta la ejecución final.
             </p>
           </div>
         </div>
       </section>
       <section className="bg-[#f3f3f3] flex flex-col w-full justify-center items-center rounded-3xl md:rounded-[4rem] mb-10">
         <div className="flex flex-col w-full lg:w-11/12 max-w-6xl py-12 lg:py-20 max-md:px-5 md:max-lg:px-12">
-          <p className=" text-primary-500 font-bold text-base ">OpenCode</p>
-          <div className="flex flex-col md:flex-row mb-6">
+          <p className=" text-primary-500 font-bold text-base ">
+            Carpos & Lagos
+          </p>
+          <div className="flex flex-col md:flex-row md:justify-between mb-6">
             <h2 className="lg:text-[48px] md:text-[32px] text-[28px] leading-tight font-bold">
-              Impulsando el crecimiento empresarial
+              Ingenería <br />
+              en construcción.
             </h2>
             <p className="text-sm md:text-base text-gray-900/60 font-semibold mt-2 md:max-w-lg">
-              En Premad, nuestra misión es clara: x cosa en Chile. Con más de 15
-              años de experiencia, hemos ayudado a decenas de empresas a
-              optimizar sus operaciones y alcanzar sus objetivos de negocio.
+              Nos adecuamos a las políticas de nuestros stakeholders, ofreciendo
+              un servicio personalizado que integra los principios de
+              eficiencia, calidad, seguridad y respeto por el medio ambiente.{" "}
             </p>
           </div>
           <div className="flex flex-col max-md:items-center md:flex-row max-md:gap-6 justify-between p-6 rounded-3xl md:rounded-full mt-6 border-2 border-primary-500/50">
             <div className="flex flex-row items-center justify-start gap-4 lg:ml-12">
-              <FaDownload className="w-6 h-6 text-primary-500" />
+              <IoTimeSharp className="w-10 h-10 text-primary-500" />
               <div className="flex flex-col">
-                <span className="font-semibold text-sm text-gray-900">
-                  Implementaciones
+                <span className="font-semibold text-md text-gray-900">
+                  Horas en proyectos
                 </span>
-                <span className="font-bold text-2xl text-gray-900">10,845</span>
+                <span className="font-bold text-2xl text-gray-900">
+                  10,000+
+                </span>
               </div>
             </div>
             <div className="flex flex-row items-center justify-start gap-4 lg:ml-12">
-              <FiThumbsUp className="w-6 h-6 text-primary-500" />
+              <FaMapSigns className="w-9 h-9 text-primary-500" />
               <div className="flex flex-col">
-                <span className="font-semibold text-sm text-gray-900">
-                  Clientes activos
+                <span className="font-semibold text-md text-gray-900">
+                  Obras civiles
                 </span>
-                <span className="font-bold text-2xl text-gray-900">8,493</span>
+                <span className="font-bold text-2xl text-gray-900">
+                  52.000 m2
+                </span>
               </div>
             </div>
             <div className="flex flex-row items-center justify-start gap-4 lg:ml-12">
-              <GoPeople className="w-7 h-7 text-primary-500" />
+              <FaHammer className="w-10 h-10 text-primary-500" />
               <div className="flex flex-col">
-                <span className="font-semibold text-sm text-gray-900">
-                  Usuarios diarios
+                <span className="font-semibold text-md text-gray-900">
+                  Proyectos Inmobiliarios
                 </span>
-                <span className="font-bold text-2xl text-gray-900">45,432</span>
+                <span className="font-bold text-2xl text-gray-900">
+                  25.000 m2
+                </span>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <Testimonios />
+      {/* <Testimonios /> */}
       <Faq />
       <Cta />
       <Footer />

@@ -11,34 +11,44 @@ import {
 
 const faqData = [
   {
-    pregunta: "¿Cómo es el proceso de implementación?",
+    pregunta: "¿Cuántos años de experiencia tienen en el mercado?",
     respuesta:
-      "La implementación es rápida y guiada. En solo 2 horas configuramos el sistema, capacitamos a tu equipo y dejamos todo funcionando para que puedas comenzar a usar el software de inmediato.",
+      "Contamos con más de 20 años de experiencia en el sector industrial y de construcción, brindando soluciones integrales en montaje industrial.",
   },
   {
-    pregunta: "¿Qué métodos de pago aceptan?",
+    pregunta: "¿En qué áreas tienen experiencia?",
     respuesta:
-      "Aceptamos transferencias bancarias, tarjetas de crédito/débito y pago mediante WebPay. Las licencias se pueden pagar de forma mensual o anual según tu preferencia.",
+      "Nuestra experiencia abarca múltiples sectores, incluyendo obras civiles, proyectos inmobiliarios e industriales, retail, refinación, energía, minería, terminales marítimos, industria pesquera, manufactura, celulosa y papel, y combustibles.",
   },
   {
-    pregunta: "¿Cómo funciona el soporte técnico?",
+    pregunta: "¿Qué servicios principales ofrecen?",
     respuesta:
-      "Brindamos soporte prioritario sin costo adicional, con un tiempo de respuesta promedio de 5 minutos. No vendemos planes de soporte telefónico - si una consulta se repite, nosotros te llamamos.",
+      "Ofrecemos servicios especializados de FEED (Front End Engineering Design), EPC (Engineering, Procurement and Construction), OP&M (Operation and Maintenance), I+D+i (Investigación, Desarrollo e Innovación) y Consultoría integral.",
   },
   {
-    pregunta: "¿El software cumple con las normativas tributarias?",
+    pregunta: "¿Qué tipo de servicios de consultoría ofrecen?",
     respuesta:
-      "Sí, nuestros sistemas están certificados y actualizados según las normativas tributarias vigentes, incluyendo facturación electrónica y documentos digitales requeridos por las autoridades fiscales.",
+      "Nuestra consultoría abarca gestión ambiental, sistemas de gestión integral, análisis de riesgos, auditorías, servicios temporarios, capacitaciones, selección de personal y coaching empresarial.",
   },
   {
-    pregunta: "¿Puedo probar el software antes de comprarlo?",
+    pregunta: "¿Trabajan en todo Chile?",
     respuesta:
-      "Sí, ofrecemos una demostración gratuita donde podrás probar todas las funcionalidades del sistema con tus propios datos durante 14 días.",
+      "Sí, operamos a nivel nacional brindando servicios en distintas regiones del país, adaptándonos a las necesidades específicas de cada zona.",
   },
   {
-    pregunta: "¿Qué pasa con mis datos si decido cambiar de sistema?",
+    pregunta: "¿Qué los diferencia de otras empresas del sector?",
     respuesta:
-      "Tus datos siempre son tuyos. Facilitamos la exportación de toda tu información en formatos estándar cuando lo necesites, sin costos adicionales.",
+      "Nos distingue nuestra experiencia de más de dos décadas, nuestro enfoque en innovación y desarrollo, y nuestra capacidad para ofrecer soluciones integrales que abarcan desde el diseño inicial hasta la operación y mantenimiento.",
+  },
+  {
+    pregunta: "¿Cómo puedo solicitar sus servicios?",
+    respuesta:
+      "Puede contactarnos a través de nuestro formulario en línea, llamando directamente a nuestras oficinas o enviando un correo electrónico. Nuestro equipo le responderá para analizar sus necesidades específicas.",
+  },
+  {
+    pregunta: "¿Ofrecen servicios de mantenimiento post-proyecto?",
+    respuesta:
+      "Sí, a través de nuestro servicio OP&M (Operation and Maintenance) ofrecemos mantenimiento especializado para garantizar la continuidad operativa de los proyectos.",
   },
 ];
 

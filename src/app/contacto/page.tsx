@@ -77,13 +77,7 @@ const Contacto = () => {
                         href="mailto:support@crm.com"
                         className="text-gray-900/60 hover:underline"
                       >
-                        info@opencode.cl
-                      </a>
-                      <a
-                        href="mailto:hello@crm.com"
-                        className="text-gray-900/60 hover:underline"
-                      >
-                        contacto@opencode.cl
+                        ventas@premad.cl
                       </a>
                     </div>
                   </div>
@@ -100,16 +94,10 @@ const Contacto = () => {
                     </div>
                     <div className="flex flex-col gap-1 font-semibold">
                       <a
-                        href="tel:+123456789"
+                        href="tel:+56413213140"
                         className="text-gray-900/60 hover:underline"
                       >
-                        +123 456 789
-                      </a>
-                      <a
-                        href="tel:+456123789"
-                        className="text-gray-900/60 hover:underline"
-                      >
-                        +456 123 789
+                        +56 413213140
                       </a>
                     </div>
                   </div>
@@ -132,13 +120,11 @@ const Contacto = () => {
                       </h3>
                     </div>
                     <p className="text-gray-900/60 font font-semibold">
-                      2169 Street Ln. Calle,
+                      Jaime Rapullo 2233, Parque Industrial Talcahuano.
                       <br />
                       Chile, Concepcion
                     </p>
                   </div>
-
-                  {/* US office Section */}
                 </div>
               </div>
             </div>
