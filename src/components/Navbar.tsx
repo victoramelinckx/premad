@@ -154,7 +154,7 @@ const NavbarContent = ({
         >
           <NavbarLink
             key="acerca"
-            title="Ácerca"
+            title="Acerca"
             to="acerca"
             smooth
             spy
@@ -164,7 +164,7 @@ const NavbarContent = ({
           />
           <NavbarLink
             key="servicios"
-            title="Areas"
+            title="Áreas"
             to="servicios"
             smooth
             spy

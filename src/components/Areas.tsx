@@ -12,7 +12,10 @@ export const Areas = () => {
 
   return (
     <Element name="servicios" className="w-full flex justify-center">
-      <section className="bg-[#f3f3f3] flex flex-col w-full justify-center items-center rounded-3xl md:rounded-[4rem]">
+      <section
+        id="areas"
+        className="bg-[#f3f3f3] flex flex-col w-full justify-center items-center rounded-3xl md:rounded-[4rem]"
+      >
         <div className="flex flex-col w-full lg:w-11/12 max-w-6xl py-10 lg:py-20 max-md:px-5 md:max-lg:px-12 gap-6">
           <div className="flex flex-col items-center text-black">
             <h2 className="lg:text-[48px] text-[36px] leading-tight font-bold text-start w-full lg:text-center">
