@@ -11,7 +11,7 @@ interface LogoCarouselProps {
 
 const defaultLogos = [
   {
-    src: "/logos_empresas/logo1.svg",
+    src: "/logos_empresas/asmar.png",
     alt: "Company 1",
   },
   {
@@ -27,7 +27,7 @@ const defaultLogos = [
     alt: "Company 4",
   },
   {
-    src: "/logos_empresas/logo5.svg",
+    src: "/logos_empresas/gasco.png",
     alt: "Company 5",
   },
   {

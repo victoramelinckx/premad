@@ -155,9 +155,39 @@ const data: CarouselDataType[] = [
     tipo: "constructora",
   },
   {
-    Image: "/imagenes/bosque-laguna.jpg",
+    Image: "/imagenes/bosque-laguna.png",
     nombre: "Condominio Bosque Laguna",
     tratamiento: "460 días - 7.640 m² - 130.000 UF.",
     tipo: "constructora",
+  },
+  {
+    Image: "/imagenes/imagen1.jpeg",
+    nombre: "Tratamiento de efluentes.",
+    tratamiento: "Agg texto.",
+    tipo: "servicio",
+  },
+  {
+    Image: "/imagenes/Imagen2.jpg",
+    nombre: "Compresión y transporte de GLP, GNL",
+    tratamiento: "Gasoductos, gas natural, shael gas, fuel gas.",
+    tipo: "servicio",
+  },
+  {
+    Image: "/imagenes/Imagen3.jpg",
+    nombre: "Hidráulica y sistemas de bombeo",
+    tratamiento: "Analisis de redes hidráulicas.",
+    tipo: "servicio",
+  },
+  {
+    Image: "/imagenes/Imagen4.jpg",
+    nombre: "Levantamiento de terreno",
+    tratamiento: "Levantamiento de piping en terreno, P&ID, Isométricos.",
+    tipo: "servicio",
+  },
+  {
+    Image: "/imagenes/imagen5.jpg",
+    nombre: "Diseño de estanques y recipientes a presión",
+    tratamiento: "Agg texto.",
+    tipo: "servicio",
   },
 ];
