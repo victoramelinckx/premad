@@ -15,24 +15,24 @@ const defaultLogos = [
     alt: "Company 1",
   },
   {
-    src: "/logos_empresas/logo2.svg",
-    alt: "Company 2",
+    src: "/logos_empresas/gasco.png",
+    alt: "Company 5",
   },
   {
-    src: "/logos_empresas/logo3.svg",
-    alt: "Company 3",
-  },
-  {
-    src: "/logos_empresas/logo4.svg",
-    alt: "Company 4",
+    src: "/logos_empresas/asmar.png",
+    alt: "Company 1",
   },
   {
     src: "/logos_empresas/gasco.png",
     alt: "Company 5",
   },
   {
-    src: "/logos_empresas/logo6.svg",
-    alt: "Company 6",
+    src: "/logos_empresas/asmar.png",
+    alt: "Company 1",
+  },
+  {
+    src: "/logos_empresas/gasco.png",
+    alt: "Company 5",
   },
 ];
 
