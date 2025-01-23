@@ -72,13 +72,13 @@ const LogoCarousel = ({
               height: "40px",
               display: "flex",
               alignItems: "center",
-              padding: "0 40px",
+              padding: "0 20px",
             }}
           >
             <img
               src={logo.src}
               alt={logo.alt}
-              className="h-10 w-auto object-contain"
+              className="h-16 w-auto object-contain"
             />
           </div>
         ))}
