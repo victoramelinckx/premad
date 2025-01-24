@@ -1,14 +1,8 @@
 import type { Metadata } from "next";
-import { Figtree, Montserrat, DM_Sans } from "next/font/google";
+import { Montserrat, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import SchemaMarkup from "@/components/SchemaMarkup";
-
-const figtree = Figtree({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-figtree",
-});
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
