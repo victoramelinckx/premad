@@ -23,15 +23,19 @@ const defaultLogos = [
     alt: "Company 1",
   },
   {
-    src: "/logos_empresas/loguito.png",
+    src: "/logos_empresas/abastible.png",
     alt: "Company 5",
   },
   {
-    src: "/logos_empresas/logoss.png",
+    src: "/logos_empresas/ministerio.png",
     alt: "Company 1",
   },
   {
     src: "/logos_empresas/sweethomes.png",
+    alt: "Company 5",
+  },
+  {
+    src: "/logos_empresas/linde.png",
     alt: "Company 5",
   },
 ];

@@ -52,7 +52,7 @@ export const Proyectos = ({ tipo }: ProyectosProps) => {
               : "Proyectos que construyen el futuro."}
           </h3>
           <p
-            className={`font-medium mt-4 ${
+            className={`font-medium mt-2 ${
               tipo != "home" ? "text-black" : "text-white"
             }`}
           >
@@ -131,12 +131,35 @@ export const Proyectos = ({ tipo }: ProyectosProps) => {
 
 const data: CarouselDataType[] = [
   {
-    Image: "/imagenes/bosque-valle.png",
-    nombre: "Condominio Bosque Valle",
-    tratamiento: "300 días - 4.820 m² - 780 UF.",
+    Image: "/imagenes/planta_linde.jpg",
+    nombre: "Ampliación Planta Linde",
+    tratamiento: "180 días - 1.340 m² - 28.320 UF.",
     tipo: "industrial",
   },
-
+  {
+    Image: "/imagenes/abastible.jpg",
+    nombre: "Planta Almacenamiento Abastible",
+    tratamiento: "150 días - 1.170 m² - 16.250 UF.",
+    tipo: "industrial",
+  },
+  {
+    Image: "/imagenes/coronel.jpg",
+    nombre: "Parque Industrial Coronel",
+    tratamiento: "120 días - 880 m² - 15.470 UF.",
+    tipo: "industrial",
+  },
+  {
+    Image: "/imagenes/biobio.jpg",
+    nombre: "Parque Industrial Bío Bío",
+    tratamiento: "180 días - 780 m² - 4.820 UF.",
+    tipo: "industrial",
+  },
+  {
+    Image: "/imagenes/bosque-valle.png",
+    nombre: "Condominio Bosque Valle",
+    tratamiento: "300 días - 4.820 m² - 54.000 UF.",
+    tipo: "industrial",
+  },
   {
     Image: "/imagenes/palomares.png",
     nombre: "Condominio Palomares",
@@ -155,34 +178,11 @@ const data: CarouselDataType[] = [
     tratamiento: "25 meses - 8.500 m² - 251.000 UF.",
     tipo: "constructora",
   },
-  {
-    Image: "/imagenes/planta_linde.jpg",
-    nombre: "Ampliación Planta Linde",
-    tratamiento: "180 días - 1.340 m² - 8.320 UF.",
-    tipo: "industrial",
-  },
-  {
-    Image: "/imagenes/abastible.jpg",
-    nombre: "Planta Almacenamiento Abastible",
-    tratamiento: "150 días - 1.170 m² - 6.250 UF.",
-    tipo: "industrial",
-  },
-  {
-    Image: "/imagenes/coronel.jpg",
-    nombre: "Parque Industrial Coronel",
-    tratamiento: "120 días - 880 m² - 5.470 UF.",
-    tipo: "industrial",
-  },
-  {
-    Image: "/imagenes/biobio.jpg",
-    nombre: "Parque Industrial Bío Bío",
-    tratamiento: "180 días - 780 m² - 4.820 UF.",
-    tipo: "industrial",
-  },
+
   {
     Image: "/imagenes/imagen1.jpeg",
     nombre: "Tratamiento de efluentes.",
-    tratamiento: "Agg texto.",
+    tratamiento: "",
     tipo: "servicio",
   },
   {
@@ -206,7 +206,7 @@ const data: CarouselDataType[] = [
   {
     Image: "/imagenes/imagen5.jpg",
     nombre: "Diseño de estanques y recipientes a presión",
-    tratamiento: "Agg texto.",
+    tratamiento: "",
     tipo: "servicio",
   },
 ];

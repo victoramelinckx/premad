@@ -17,7 +17,7 @@ export const Servicios = () => {
       <div className="flex flex-col w-full lg:w-11/12 max-w-5xl py-10 lg:py-20 max-md:px-5 md:max-lg:px-12 gap-6">
         <div className="flex flex-col items-center text-white">
           <h2 className=" lg:text-[48px]  text-[36px] leading-tight font-bold text-start w-full lg:text-center">
-            Nuestros servicios.
+            Nuestros servicios <br /> industriales en acción.
           </h2>
           <p className="lg:text-center self-start lg:self-center text-white font-medium max-w-lg mt-2  ">
             Servicios de ingeniería especializados con soluciones técnicas

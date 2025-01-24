@@ -22,8 +22,8 @@ export const Areas = () => {
               Nuestras áreas.
             </h2>
             <p className="lg:text-center self-start lg:self-center text-gray-700 font-medium max-w-lg mt-2">
-              Soluciones integrales en montaje industrial, respaldadas por más
-              de 20 años de experiencia.
+              Soluciones integrales respaldadas por más de 20 años de
+              experiencia.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 lg:gap-y-8 lg:mt-4">
