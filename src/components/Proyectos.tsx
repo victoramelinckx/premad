@@ -58,7 +58,7 @@ export const Proyectos = ({ tipo }: ProyectosProps) => {
           >
             {tipo === "servicio"
               ? "Experiencia comprobada a través de servicios de ingeniería y consultoría que impulsan el éxito de nuestros clientes."
-              : "Un vistazo a algunos de nuestros proyectos destacados, construidos con precisión y dedicación."}
+              : "Algunos de nuestros proyectos destacados, construidos con precisión y dedicación."}
           </p>
         </div>
         <div className="w-full max-md:px-4 max-w-7xl overflow-visible relative">
