@@ -34,10 +34,6 @@ const defaultLogos = [
     src: "/logos_empresas/sweethomes.png",
     alt: "Company 5",
   },
-  {
-    src: "/logos_empresas/ministeriosweethomes.png",
-    alt: "Company 5",
-  },
 ];
 
 const LogoCarousel = ({
@@ -65,7 +61,7 @@ const LogoCarousel = ({
       <div
         className="flex py-4"
         style={{
-          animation: "scroll 20s linear infinite",
+          animation: "scroll 15s linear infinite",
         }}
       >
         {duplicatedLogos.map((logo, index) => (
@@ -94,12 +90,8 @@ const LogoCarousel = ({
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-50%);
+            transform: translateX(-200%);
           }
-        }
-
-        div:hover {
-          animation-play-state: paused;
         }
       `}</style>
     </div>
