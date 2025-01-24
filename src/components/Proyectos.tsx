@@ -133,32 +133,51 @@ const data: CarouselDataType[] = [
   {
     Image: "/imagenes/bosque-valle.png",
     nombre: "Condominio Bosque Valle",
-    tratamiento: "180 días - 4.820 m² - 780 UF.",
+    tratamiento: "300 días - 4.820 m² - 780 UF.",
     tipo: "industrial",
   },
-  {
-    Image: "/imagenes/elcanelo.jpg",
-    nombre: "El Canelo",
-    tratamiento: "120 días - 880 m² - 5.470 UF.",
-    tipo: "industrial",
-  },
+
   {
     Image: "/imagenes/palomares.png",
     nombre: "Condominio Palomares",
-    tratamiento: "120 días - 2.040 m² - 10.710 UF.",
+    tratamiento: "32 meses - 13.200 m² - 278.000 UF.",
     tipo: "constructora",
   },
   {
     Image: "/imagenes/vista-bahia.jpg",
     nombre: "Condominio Vista Bahia",
-    tratamiento: "300 días - 5.340 m² - 53.720 UF.",
+    tratamiento: "18 meses - 6.500 m² - 145.000 UF.",
     tipo: "constructora",
   },
   {
     Image: "/imagenes/bosque-laguna.png",
     nombre: "Condominio Bosque Laguna",
-    tratamiento: "460 días - 7.640 m² - 130.000 UF.",
+    tratamiento: "25 meses - 8.500 m² - 251.000 UF.",
     tipo: "constructora",
+  },
+  {
+    Image: "/imagenes/planta_linde.jpg",
+    nombre: "Ampliación Planta Linde",
+    tratamiento: "180 días - 1.340 m² - 8.320 UF.",
+    tipo: "industrial",
+  },
+  {
+    Image: "/imagenes/abastible.jpg",
+    nombre: "Planta Almacenamiento Abastible",
+    tratamiento: "150 días - 1.170 m² - 6.250 UF.",
+    tipo: "industrial",
+  },
+  {
+    Image: "/imagenes/coronel.jpg",
+    nombre: "Parque Industrial Coronel",
+    tratamiento: "120 días - 880 m² - 5.470 UF.",
+    tipo: "industrial",
+  },
+  {
+    Image: "/imagenes/biobio.jpg",
+    nombre: "Parque Industrial Bío Bío",
+    tratamiento: "180 días - 780 m² - 4.820 UF.",
+    tipo: "industrial",
   },
   {
     Image: "/imagenes/imagen1.jpeg",

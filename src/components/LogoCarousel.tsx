@@ -19,19 +19,23 @@ const defaultLogos = [
     alt: "Company 5",
   },
   {
-    src: "/logos_empresas/asmar.png",
+    src: "/logos_empresas/sodimac.png",
     alt: "Company 1",
   },
   {
-    src: "/logos_empresas/gasco.png",
+    src: "/logos_empresas/loguito.png",
     alt: "Company 5",
   },
   {
-    src: "/logos_empresas/asmar.png",
+    src: "/logos_empresas/logoss.png",
     alt: "Company 1",
   },
   {
-    src: "/logos_empresas/gasco.png",
+    src: "/logos_empresas/sweethomes.png",
+    alt: "Company 5",
+  },
+  {
+    src: "/logos_empresas/ministeriosweethomes.png",
     alt: "Company 5",
   },
 ];
