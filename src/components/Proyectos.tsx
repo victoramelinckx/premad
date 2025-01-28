@@ -204,7 +204,7 @@ const data: CarouselDataType[] = [
     tipo: "servicio",
   },
   {
-    Image: "/imagenes/asmar.jpg",
+    Image: "/imagenes/asmar.jpeg",
     nombre: "Centro capacitación A.S.M.A.R",
     tratamiento: "150 dias - 400 m² - 21.000 UF.",
     tipo: "constructora",
