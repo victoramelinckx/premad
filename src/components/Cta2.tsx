@@ -60,11 +60,11 @@ export const Cta2 = () => {
               placeholder="E-mail"
             />
             <input
-              className="p-4 rounded-[30px] border-none bg-primary-200/40 text-white/80 placeholder:text-white/80 max-lg:text-sm font-semibold"
+              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white/80 placeholder:text-white/80 max-lg:text-sm font-semibold"
               placeholder="Teléfono"
             />
             <textarea
-              className="p-4 rounded-[30px] border-none bg-primary-200/40 text-white/80 placeholder:text-white/80 max-lg:text-sm font-semibold "
+              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white/80 placeholder:text-white/80 max-lg:text-sm font-semibold "
               placeholder="Mensaje"
               rows={3}
             />
