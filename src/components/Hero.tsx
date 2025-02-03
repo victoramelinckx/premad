@@ -14,7 +14,7 @@ export const Hero = () => {
       <div className="absolute inset-0 w-full h-full z-0">
         <div className="absolute inset-0 bg-black/70 z-[1]" /> {/* Overlay */}
         <Image
-          src="/background.png"
+          src="/fondo-premad.png"
           alt="Construction background"
           fill
           style={{ objectFit: "cover" }}

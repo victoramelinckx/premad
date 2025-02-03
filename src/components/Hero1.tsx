@@ -89,7 +89,15 @@ export const Hero1: FC = () => {
           fill
           style={{ objectFit: "cover" }}
           priority
-          className="z-0"
+          className="z-0 flex lg:hidden"
+        />
+        <Image
+          src="/fondo-premad.png"
+          alt="Construction background"
+          fill
+          style={{ objectFit: "cover" }}
+          priority
+          className="z-0 hidden lg:flex"
         />
       </div>
 
