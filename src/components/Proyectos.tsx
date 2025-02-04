@@ -161,7 +161,7 @@ const data: CarouselDataType[] = [
     tipo: "industrial",
   },
   {
-    Image: "/imagenes/palomares.png",
+    Image: "/imagenes/palomares.jpeg",
     nombre: "Condominio Palomares",
     tratamiento: "32 meses - 13.200 m² - 278.000 UF.",
     tipo: "constructora",

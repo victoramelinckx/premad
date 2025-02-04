@@ -1,6 +1,12 @@
 "use client";
 
 import Acercade from "../../public/imagenes/premad_acerca.png";
+
+import SweetHomes from "../../public/logos_empresas/sweethomes.png";
+
+import Premad from "../../public/premad_logo.png";
+import CarposyLagos from "../../public/carposylagos_negro.png";
+
 import Image from "next/image";
 import { Element, Link } from "react-scroll";
 import { Button } from "./Button";
@@ -72,7 +78,7 @@ export const About = () => {
 
           {/* Contenedor de la imagen - Altura automática */}
           <motion.div
-            className="w-full lg:w-[55%]"
+            className="w-full lg:w-[55%] flex flex-col space-y-4"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
@@ -88,6 +94,29 @@ export const About = () => {
               priority
               placeholder="blur"
             />
+            {/* <div className="flex justify-center items-center space-x-4">
+              <Image
+                src={CarposyLagos}
+                alt="About us image"
+                className="h-14 w-full"
+                priority
+                placeholder="blur"
+              />
+              <Image
+                src={SweetHomes}
+                alt="About us image"
+                className="h-14 w-full"
+                priority
+                placeholder="blur"
+              />
+              <Image
+                src={Premad}
+                alt="About us image"
+                className="h-14 w-full"
+                priority
+                placeholder="blur"
+              />
+            </div> */}
           </motion.div>
         </section>
       </div>

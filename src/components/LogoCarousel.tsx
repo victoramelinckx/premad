@@ -38,6 +38,22 @@ const defaultLogos = [
     src: "/logos_empresas/linde.png",
     alt: "Company 5",
   },
+  {
+    src: "/logos_empresas/socovesa.png",
+    alt: "Company 5",
+  },
+  {
+    src: "/logos_empresas/carran.png",
+    alt: "Company 5",
+  },
+  {
+    src: "/logos_empresas/py.png",
+    alt: "Company 5",
+  },
+  {
+    src: "/logos_empresas/salfa.png",
+    alt: "Company 5",
+  },
 ];
 
 const LogoCarousel = ({

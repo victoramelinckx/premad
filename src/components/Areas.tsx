@@ -65,7 +65,11 @@ const ServiceCard: FC<ServiceCardProps> = ({ icon, title, description }) => (
       <img
         src={icon}
         alt={`${title} icon`}
-        className="w-16 h-16 z-10 self-start mb-6"
+        className={
+          icon === "/logos.png"
+            ? "w-52 h-auto"
+            : "w-16 h-16 lg:w-20 lg:h-20 flex-shrink-0"
+        }
       />
       <h3 className="z-10 font-semibold text-3xl text-start">{title}</h3>
       <p className="z-10 text-base mt-4">{description}</p>
@@ -96,7 +100,7 @@ const services = [
       "Proyectos epc, ingenieria y construcción para sectores industriales de alta complejidad.",
   },
   {
-    icon: "/icons/retail.svg",
+    icon: "/logos.png",
     title: "Construcción industrializada y modular",
     description: "Montaje de espacios funcionales para comercio.",
   },
