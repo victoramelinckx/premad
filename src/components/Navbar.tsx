@@ -254,18 +254,18 @@ const MobileNavbarContent = ({
         `}
       >
         <NavbarLink
-          key="servicios"
-          title="Servicios"
-          to="servicios"
+          key="acerca"
+          title="Acerca"
+          to="acerca"
           smooth
           className="h-14"
           onClick={() => setIsMenuOpen(false)}
         />
 
         <NavbarLink
-          key="antes/despues"
-          title="Resultados"
-          to="antes/despues"
+          key="servicios"
+          title="Áreas"
+          to="servicios"
           smooth
           offset={-72}
           className="h-14"
@@ -273,9 +273,9 @@ const MobileNavbarContent = ({
         />
 
         <NavbarLink
-          key="testimonios"
-          title="Testimonios"
-          to="testimonios"
+          key="proyectos"
+          title="Trabajos"
+          to="proyectos"
           smooth
           className="h-14"
           onClick={() => setIsMenuOpen(false)}

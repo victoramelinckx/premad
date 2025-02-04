@@ -83,6 +83,13 @@ export const Hero1: FC = () => {
       {/* Background Image Container */}
       <div className="absolute inset-0 w-full h-full z-0">
         <div className="absolute inset-0 bg-black/55 z-[1]" />
+        <div
+          className="absolute inset-0 z-[2] lg:hidden"
+          style={{
+            background:
+              "linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 35%)",
+          }}
+        />
         <Image
           src="/fondo1.jpg"
           alt="Construction background"
