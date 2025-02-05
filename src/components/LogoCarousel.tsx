@@ -81,7 +81,7 @@ const LogoCarousel = ({
       <div
         className="flex py-4"
         style={{
-          animation: "scroll 15s linear infinite",
+          animation: "scroll 18s linear infinite",
         }}
       >
         {duplicatedLogos.map((logo, index) => (
