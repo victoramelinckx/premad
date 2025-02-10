@@ -2,15 +2,15 @@ import { EmailTemplate } from "../../../components/EmailTemplate";
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend("re_dummy_key");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
   try {
     // @ts-ignore
     const data = await resend.emails.send({
-      from: "Contacto Website <contacto@jdenxsolutions.com>",
-      to: ["jdenxsolutions@gmail.com"],
+      from: "Contacto Website Premad",
+      to: ["vickx2000@gmail.com"],
       subject: `Solicitud de contacto de ${body.name}`,
       react: EmailTemplate({
         name: body.name,
