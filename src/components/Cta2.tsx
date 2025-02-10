@@ -101,27 +101,27 @@ export const Cta2 = () => {
           >
             <input
               ref={nameRef}
-              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white/80 placeholder:text-white/80 max-lg:text-sm font-semibold"
+              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white placeholder:text-white/80 max-lg:text-sm font-semibold"
               placeholder="Nombre"
               required
             />
             <input
               ref={emailRef}
               type="email"
-              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white/80 placeholder:text-white/80 max-lg:text-sm font-semibold"
+              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white placeholder:text-white/80 max-lg:text-sm font-semibold"
               placeholder="E-mail"
               required
             />
             <input
               ref={phoneRef}
               type="tel"
-              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white/80 placeholder:text-white/80 max-lg:text-sm font-semibold"
+              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white placeholder:text-white/80 max-lg:text-sm font-semibold"
               placeholder="Teléfono"
               required
             />
             <textarea
               ref={mensajeRef}
-              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white/80 placeholder:text-white/80 max-lg:text-sm font-semibold"
+              className="p-4 rounded-[30px] border-none bg-primary-200/60 text-white placeholder:text-white/80 max-lg:text-sm font-semibold"
               placeholder="Mensaje"
               rows={3}
               required
