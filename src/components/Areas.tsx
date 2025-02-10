@@ -104,11 +104,11 @@ const services = [
     title: "Construcción industrializada y modular",
     description: "Montaje de espacios funcionales para comercio.",
   },
-  {
-    icon: "/icons/refinacion.svg",
-    title: "Refinación",
-    description: "Soluciones integrales para plantas de refinación.",
-  },
+  // {
+  //   icon: "/icons/refinacion.svg",
+  //   title: "Refinación",
+  //   description: "Soluciones integrales para plantas de refinación.",
+  // },
   {
     icon: "/icons/energia.svg",
     title: "Energía",

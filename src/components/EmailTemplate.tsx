@@ -4,7 +4,6 @@ interface EmailTemplateProps {
   name: string;
   phone: string;
   email: string;
-  treatment: string;
   mensaje: string;
 }
 
@@ -12,7 +11,6 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
   name,
   phone,
   email,
-  treatment,
   mensaje,
 }) => (
   <div>
@@ -25,9 +23,6 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     </h3>
     <h3>
       Email: <span style={{ fontWeight: 400 }}>{email}</span>
-    </h3>
-    <h3>
-      Tratamiento interés: <span style={{ fontWeight: 400 }}>{treatment}</span>
     </h3>
     <h3>
       Mensaje: <span style={{ fontWeight: 400 }}>{mensaje}</span>
