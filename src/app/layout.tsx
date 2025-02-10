@@ -6,6 +6,7 @@ import SchemaMarkup from "@/components/SchemaMarkup";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
   variable: "--font-dm-sans",
 });
