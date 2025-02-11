@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
   try {
     // @ts-ignore
     const data = await resend.emails.send({
-      from: "Contacto Website Premad",
+      from: "Contacto Website Premad <contacto@premad.cl>",
       to: ["vickx2000@gmail.com"],
       subject: `Solicitud de contacto de ${body.name}`,
       react: EmailTemplate({
