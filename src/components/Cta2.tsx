@@ -41,15 +41,15 @@ export const Cta2 = () => {
         body: JSON.stringify(formData),
       });
 
-      const data = await res.json();
-
-      if (data.error) {
-        notifyError();
-      } else {
-        formRef.current?.reset();
-        notifySuccess();
+      if (!res.ok) {
+        throw new Error("Failed to send message");
       }
+
+      const data = await res.json();
+      formRef.current?.reset();
+      notifySuccess();
     } catch (error) {
+      console.error("Error:", error);
       notifyError();
     } finally {
       setEnviando(false);
