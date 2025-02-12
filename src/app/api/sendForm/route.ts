@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
     // @ts-ignore
     const data = await resend.emails.send({
       from: "Contacto Website Premad <contacto@premad.cl>",
-      to: ["vickx2000@gmail.com"],
+      to: ["ventas@premad.cl"],
       subject: `Solicitud de contacto de ${body.name}`,
       react: EmailTemplate({
         name: body.name,
